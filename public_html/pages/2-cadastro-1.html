@@ -69,8 +69,25 @@
                                                             <div class="col-12">
                                                                 <div class="form-group">
                                                                     <label for="cnpj">CNPJ</label>
-                                                                    <input type="text" class="form-control required" id="cnpj" name="cnpj" placeholder="Apenas os números" aria-invalid="false">
+                                                                    <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="Apenas os números" aria-invalid="false">
                                                                     <label id="cnpj-error" class="danger" for="cnpj" style="display: none;"></label>
+                                                                </div>
+
+                                                                <div class="form-group form-check">
+                                                                    <input type="checkbox" class="form-check-input cursor-pointer" id="cpfCheck" data-toggle="collapse" data-target="#collapseCpf">
+                                                                    <label class="form-check-label cursor-pointer" for="cpfCheck">Quero me cadastrar como pessoa física</label>
+                                                                </div>
+
+                                                                <div id="collapseCpf" class="collapse">
+                                                                    <div class="form-group">
+                                                                        <label for="cpf">CPF</label>
+                                                                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Apenas os números" aria-invalid="false">
+                                                                        <label id="cpf-error" class="danger" for="cpf" style="display: none;"></label>
+                                                                    </div>
+
+                                                                    <div class="alert alert-dark font-small-3" role="alert">
+                                                                        <p class="m-0">Só use esta opção se você não estiver comprando para sua empresa. Tenha em mente que a maioria dos fornecedores não atendem pessoa física.</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -170,7 +187,7 @@
                                                             </div>
 
                                                             <div class="col-12">
-                                                                <div class="alert alert-dark font-small" role="alert">
+                                                                <div class="alert alert-dark font-small-3" role="alert">
                                                                     <p class="mb-0">O email certo é muito importante porque você vai receber notificações nossas atarvés dele.</p>
                                                                 </div>
                                                             </div>
@@ -201,7 +218,7 @@
                                                 <span class="text-bold-600" style="color: #f57f17">Quer vender através do Meu Fornecedor?</span><br>
                                                 <small>Se você fornece produtos para restaurantes e similares, nós podemos ser seu novo canal de vendas.</small>
                                             </p>
-                                            <p><a href="#" data-toggle="modal" data-target="#contact-fornecedor" class="btn btn-outline-primary btn-inline btn-outline-orange mb-1">Seja nosso parceiro</a></p>
+                                            <p><a href="#" data-toggle="modal" data-target="#contact-fornecedor" class="btn btn-outline-primary btn-inline btn-outline-orange mb-1 text-bold-600">Seja nosso parceiro</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -225,7 +242,7 @@
                 </div>
                 <form action="#">
                     <div class="modal-body">
-                        <p class="font-small">
+                        <p class="font-small-3">
                             Você fornece para restaurantes, hotéis, padarias, minimercados e similares? Nós podemos ser seu canal de vendas!<br><br>
                             Deixe seus dados, nós entraremos em contato. O cadastro de parceiros é feito através do nosso pessoal.<br><br>
                             Desde já agradecemos o interesse pela parceria.
@@ -255,7 +272,7 @@
                         <p>Você será redirecionado para nosso site ... <i class="fa fa-spinner fa-pulse"></i></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary text-bold-600">Enviar</button>
                     </div>
                 </form>
             </div>

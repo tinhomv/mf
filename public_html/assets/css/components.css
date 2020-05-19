@@ -1836,6 +1836,7 @@ body.fixed-footer .main-menu.menu-fixed {
   left : 0;
   background : #FFFFFF;
   right : 0;
+  top: -1px;
   width : 100%;
   z-index : 1000;
   border-radius : 0.5rem;
