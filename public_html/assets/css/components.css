@@ -398,6 +398,7 @@ body.fixed-footer footer.footer-dark {
   color : #565656;
   padding : 10px 15px 10px 15px;
   line-height : 1.45;
+  border-radius: 6px;
   -webkit-transition : padding 0.35s ease 0s !important;
           transition : padding 0.35s ease 0s !important;
 }
@@ -405,9 +406,11 @@ body.fixed-footer footer.footer-dark {
   color : #AFAFAF;
 }
 .main-menu.menu-light .navigation li.hover > a {
-  padding-left : 25px;
+  /*padding-left : 25px;
   -webkit-transition : padding 0.35s ease 0s !important;
-          transition : padding 0.35s ease 0s !important;
+          transition : padding 0.35s ease 0s !important;*/
+  background: rgba(127,127,127,0.1);
+  border-radius: 6px;
 }
 .main-menu.menu-light .navigation > li {
   padding : 0 15px;
