@@ -16,42 +16,34 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/colors.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.css">
 
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
  
 </head>
 
-<body class="vertical-layout vertical-menu-modern 2-columns navbar-floating footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <div class="header-navbar-shadow"></div>
 
-    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-dark navbar-shadow bg-primary bg-mf-verde">
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-verde">
         <div class="navbar-wrapper">
             <div class="navbar-container content">
                 <div class="navbar-collapse" id="navbar-mobile">
                     <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
-                        </ul>
-                        <ul class="nav navbar-nav bookmark-icons">
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="#x" data-toggle="modal" data-target="#options-search" title="Onde você está?">
-                                    SP <i class="feather icon-chevron-down"></i>
-                                </a>
+                            <li class="nav-item mobile-menu mr-auto">
+                                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a>
                             </li>
-                            <li class="nav-item d-none d-lg-block">
-                                <a href="#x" class="nav-link font-weight-bold" data-toggle="modal" data-target="#options-search" title="Cotar como...">
-                                    PJ <i class="feather icon-chevron-down"></i>
-                                </a>
+                            <li class="nav-item d-sm-block d-none">
+                                <a href="#"><div class="brand-logo-mf"></div></a>
                             </li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item nav-search"><a class="nav-link nav-link-search" data-toggle="tooltip" data-placement="top" title="Buscar produtos"><i class="ficon feather icon-search"></i></a>
+                            <li class="nav-item nav-search">
+                                <a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span></a>
                                 <form action="">
-                                    <div class="search-input">
+                                    <div class="search-input rounded-0">
                                         <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                        <input class="input" type="text" placeholder="Buscar produtos">
+                                        <input class="input rounded-0" type="text" placeholder="Buscar produtos">
                                         <div class="search-input-close"><i class="feather icon-x"></i></div>
                                     </div>
                                 </form>
@@ -60,11 +52,11 @@
                     </div>
                     <ul class="nav navbar-nav float-right">
                         <li class="nav-item">
-                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><i class="feather icon-shopping-cart"></i><span class="d-none d-xl-inline">&nbsp; Pedidos de compra</span></a>
+                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><span>Pedidos <span class="d-sm-inline d-none">de compra</span></span></a>
                         </li>
                         <li class="nav-item position-relative">
-                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><i class="feather icon-list"></i><span class="d-none d-xl-inline">&nbsp; Cotação e lista</span></a>
-                            <span class="badge badge-pill badge-warning badge-up" style="top: 8px; right: -4px;">38</span>
+                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><span>Cotação e lista</span></a>
+                            <span class="badge badge-pill badge-up" style="background: #d11b6d; top: 8px; right: -4px;">38</span>
                         </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
@@ -104,7 +96,11 @@
                         <h2 class="brand-text mb-0">Meu Fornecedor</h2>
                     </a>
                 </li>
-                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block primary" data-ticon="icon-disc"></i></a></li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="feather icon-x font-medium-4 primary toggle-icon"></i>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="shadow-bottom"></div>
@@ -219,76 +215,6 @@
         <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
     </footer>
 
-    <!-- Modal - Opções busca -->
-    <div class="modal fade text-left" id="options-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">Busca produtos</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form action="#">
-                    <div class="modal-body">
-                        <p class="font-small-3">Numa tacada só, cote de diversos fornecedores. Compare preços e emita pedidos de compra. Alimentos, bebidas, embalagens, limpeza e utensílios.</p>
-
-                        <div class="form-body">
-                            <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <label class="text-bold-700">Onde você está?</label>
-                                    <div class="form-group">
-                                        <select class="custom-select" id="">
-                                            <option value="AC">Acre</option>
-                                            <option value="AL">Alagoas</option>
-                                            <option value="AP">Amapá</option>
-                                            <option value="AM">Amazonas</option>
-                                            <option value="BA">Bahia</option>
-                                            <option value="CE">Ceará</option>
-                                            <option value="DF">Distrito Federal</option>
-                                            <option value="ES">Espírito Santo</option>
-                                            <option value="GO">Goiás</option>
-                                            <option value="MA">Maranhão</option>
-                                            <option value="MG">Minas Gerais</option>
-                                            <option value="MS">Mato Grosso do Sul</option>
-                                            <option value="MT">Mato Grosso</option>
-                                            <option value="PA">Pará</option>
-                                            <option value="PB">Paraíba</option>
-                                            <option value="PE">Pernambuco</option>
-                                            <option value="PI">Piaui</option>
-                                            <option value="PR">Paraná</option>
-                                            <option value="RJ">Rio de Janeiro</option>
-                                            <option value="RN">Rio Grande do Norte</option>
-                                            <option value="RO">Rondonia</option>
-                                            <option value="RR">Roraima</option>
-                                            <option value="RS">Rio Grande do Sul</option>
-                                            <option value="SC">Santa Catarina</option>
-                                            <option value="SE">Sergipe</option>
-                                            <option value="SP" selected="selected">São Paulo</option>
-                                            <option value="TO">Tocantins</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <label class="text-bold-700">Cotar como...</label>
-                                    <div class="form-group">
-                                        <select class="custom-select" id="">
-                                            <option value="PJ" selected="selected">Pessoa jurídica</option>
-                                            <option value="PF">Pessoa física</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary text-bold-600" data-dismiss="modal">Avançar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <!-- Modal - Dados do negócio -->
     <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -393,8 +319,6 @@
     <script src="../assets/vendors/js/vendors.min.js"></script>
     <script src="../assets/js/app-menu.min.js"></script>
     <script src="../assets/js/app.min.js"></script>
-
-    <script src="../assets/js/scripts.js"></script>
 
 </body>
 </html>

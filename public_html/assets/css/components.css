@@ -1964,7 +1964,7 @@ body.fixed-footer .main-menu.menu-fixed {
 
 .navbar-dark .search-input.open .input, .navbar-semi-light .search-input.open .input {
   color : #F5F7FA;
-  border : 1px solid #F5F7FA;
+  border : 1px solid transparent;
 }
 
 body.navbar-static .navbar-container .search-input.open {
