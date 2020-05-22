@@ -32,22 +32,14 @@
                 <div class="navbar-collapse" id="navbar-mobile">
                     <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
-                        </ul>
-                        <ul class="nav navbar-nav bookmark-icons">
-                            <li class="nav-item">
-                                <a class="nav-link font-weight-bold" href="#x" data-toggle="modal" data-target="#options-search" title="Onde você está?">
-                                    SP <i class="feather icon-chevron-down"></i>
-                                </a>
+                            <li class="nav-item mobile-menu mr-auto">
+                                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#" title="Menu principal"><i class="ficon feather icon-menu"></i></a>
                             </li>
-                            <li class="nav-item d-none d-lg-block">
-                                <a href="#x" class="nav-link font-weight-bold" data-toggle="modal" data-target="#options-search" title="Cotar como...">
-                                    PJ <i class="feather icon-chevron-down"></i>
-                                </a>
+                            <li class="nav-item d-sm-block d-none">
+                                <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
                             </li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item nav-search"><a class="nav-link nav-link-search" data-toggle="tooltip" data-placement="top" title="Buscar produtos"><i class="ficon feather icon-search"></i></a>
+                            <li class="nav-item nav-search">
+                                <a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span></a>
                                 <form action="">
                                     <div class="search-input rounded-0">
                                         <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
@@ -59,12 +51,12 @@
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
-                        <li class="nav-item d-sm-block d-none">
-                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><i class="feather icon-shopping-cart"></i><span class="d-none d-xl-inline">&nbsp; Pedidos de compra</span></a>
+                        <li class="nav-item d-sm-inline d-none">
+                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><span>Pedidos de compra</span></a>
                         </li>
                         <li class="nav-item position-relative">
-                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><i class="feather icon-list"></i><span class="d-none d-xl-inline">&nbsp; Cotação e lista</span></a>
-                            <span class="badge badge-pill badge-warning badge-up" style="top: 8px; right: -4px;">38</span>
+                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><span>Cotação e lista</span></a>
+                            <span class="badge badge-pill badge-up" style="background: #d11b6d; top: 8px; right: -4px;">38</span>
                         </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
@@ -104,57 +96,60 @@
                         <h2 class="brand-text mb-0">Meu Fornecedor</h2>
                     </a>
                 </li>
-                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block primary" data-ticon="icon-disc"></i></a></li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="feather icon-x font-medium-4 primary toggle-icon"></i>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item">
-                    <a href="#x" class="bg-primary text-white">
-                        <i class="feather icon-check-circle"></i>
-                        <span class="menu-title">Cotar</span>
-                        <span class="badge badge badge-warning badge-pill float-right">38 produtos</span>
-                    </a>
+                <li class="nav-item text-white bg-primary text-center p-2 mb-1">
+                    <span class="d-block font-weight-bold font-medium-3">38 produtos</span>
+                    <span class="d-block font-small-3 mb-1">para cotar agora</span>
+                    <a href="#x" class="btn font-small-3 font-weight-bold bg-white text-primary width-100 m-auto">Avançar</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#x" data-toggle="tooltip" data-placement="right" title="Produtos favoritados para sua cotação">
-                        <i class="feather icon-list"></i><span class="menu-title">Sua lista</span>
-                        <span class="badge badge badge-warning badge-pill float-right">412 produtos</span>
+                    <a href="#x">
+                        <span class="menu-title">Sua lista (412 produtos)</span>
                     </a>
+                    <i class="font-small-2 ml-1">Produtos favoritados para sua cotação</i>
                 </li>
                 <div class="divider"><hr class="m-0"></div>
-                <li class="nav-item"><a href="#x"><i class="feather icon-zap"></i><span class="menu-title">Cotações abertas</span></a></li>
-                <li class="nav-item"><a href="#x"><i class="feather icon-zap-off"></i><span class="menu-title">Cotações encerradas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações abertas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
                 <div class="divider"><hr class="m-0"></div>
-                <li class="nav-item"><a href="#x"><i class="feather icon-shopping-cart"></i><span class="menu-title">Pedidos de compra</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
+                <li class="nav-item mt-1"><a href="navegar-como.html" style="background: #eee;"><span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span></a></li>
                 <li class="navigation-header"><span>Navegue por categorias</span></li>
-                <li class="nav-item"><a href="#x"><i class="fa fa-coffee"></i><span class="menu-title">Alimentos e Bebidas</span></a>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Alimentos e Bebidas</span></a>
                     <ul class="menu-content font-small-3">
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria N</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#x"><i class="fa fa-shopping-bag"></i><span class="menu-title">Embalagens</span></a>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Embalagens</span></a>
                     <ul class="menu-content font-small-3">
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria N</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#x"><i class="fa fa-shower"></i><span class="menu-title">Limpeza</span></a>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Limpeza</span></a>
                     <ul class="menu-content font-small-3">
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria N</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="#x"><i class="fa fa-cutlery"></i><span class="menu-title">Utensilios</span></a>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Utensilios</span></a>
                     <ul class="menu-content font-small-3">
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><i class="feather icon-circle"></i><span class="menu-item">Categoria N</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
                     </ul>
                 </li>
             </ul>
@@ -168,7 +163,7 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Conta de usuário</h2>
+                            <h2 class="content-header-title mb-0">Conta de usuário</h2>
                         </div>
                     </div>
                 </div>
@@ -451,8 +446,6 @@
     <script src="../assets/vendors/js/vendors.min.js"></script>
     <script src="../assets/js/app-menu.min.js"></script>
     <script src="../assets/js/app.min.js"></script>
-
-    <script src="../assets/js/scripts.js"></script>
 
 </body>
 </html>
