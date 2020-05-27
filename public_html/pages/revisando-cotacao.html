@@ -166,189 +166,231 @@
 
     <div class="app-content content">
         <div class="header-navbar-shadow"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-                <div class="content-header-left col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title mb-0">Conta de usuário</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="content-wrapper pb-0">
             <div class="content-body">
-                <section class="card">
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="col-md-6 col-12">
-                                <div class="card-body">
-                                    <form class="form form-horizontal">
-                                        <div class="form-body">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Seu nome</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="text" id="" class="form-control" name="" placeholder="Nome do resposável pela compra">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>WhatsApp</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="text" id="" class="form-control" name="" placeholder="WhatsApp">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Telefone</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="number" id="" class="form-control" name="" placeholder="Telefone">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Email</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="email" id="" class="form-control" name="" placeholder="Email">
-                                                            <small><i>As vezes mandaremos notificações para este email, portanto digite um que você tenha fácil acesso.</i></small>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4 class="text-body">Revise sua cotação</h4>
+                        <p class="font-small-3">Revise antes de acionar os fornecedores</p>
 
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <hr class="mt-0">
-                                                            <p class="m-0 mt-2 font-weight-bold">Quer mudar a senha? <a data-toggle="collapse" href="#collapseSenha" aria-expanded="false" aria-controls="collapseSenha">Clique aqui</a></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12 collapse" id="collapseSenha">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Senha atual</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="password" id="" class="form-control" name="" placeholder="Confirme sua senha atual">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 collapse" id="collapseSenha">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Nova senha</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="password" id="" class="form-control" name="" placeholder="Cadastre uma nova senha">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-8 offset-md-4">
-                                                    <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect waves-light">Salvar</button>
-                                                </div>
+                        <div class="card collapse-icon accordion-icon-rotate shadow-sm">
+                            <div class="accordion" id="accordionCotacao" data-toggle-hover="true">
+                                <div class="collapse-bordered">
+                                    <div class="card bg-transparent">
+                                        <div class="card-header" id="headingCategoria1" data-toggle="collapse" role="button" data-target="#collapseCategoria1" aria-expanded="true" aria-controls="collapseCategoria1">
+                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
+                                                Alimentos e bebidas
+                                            </span>
+                                        </div>
+                                        <div id="collapseCategoria1" class="collapse show" aria-labelledby="headingCategoria1" data-parent="#accordionCotacao">
+                                            <div class="card-body font-small-3 pt-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="card bg-transparent">
+                                        <div class="card-header collapsed" id="headingCategoria2" data-toggle="collapse" role="button" data-target="#collapseCategoria2" aria-expanded="false" aria-controls="collapseCategoria2">
+                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
+                                                Embalagens
+                                            </span>
+                                        </div>
+                                        <div id="collapseCategoria2" class="collapse" aria-labelledby="headingCategoria2" data-parent="#accordionCotacao">
+                                            <div class="card-body font-small-3 pt-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-transparent">
+                                        <div class="card-header collapsed" id="headingCategoria3" data-toggle="collapse" role="button" data-target="#collapseCategoria3" aria-expanded="false" aria-controls="collapseCategoria3">
+                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
+                                                Limpeza
+                                            </span>
+                                        </div>
+                                        <div id="collapseCategoria3" class="collapse" aria-labelledby="headingCategoria3" data-parent="#accordionCotacao">
+                                            <div class="card-body font-small-3 pt-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <div class="col-md-9">
+                        <div class="border-left pl-2">
+                            <h4>Nome da categoria</h4>
+                            <p class="font-small-3">Produtos inclusos na cotação</p>
+                        </div>
+                        <div class="row pl-1">
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 mb-3">
+                            <h6>Faltou algum produto?</h6>
+                            <p class="mt-1">
+                                <a href="#x" class="btn btn-outline-primary bg-white text-bold-600 waves-effect waves-light mr-2">Adicionar da minha lista</a>
+                                <a href="#x" class="font-weight-bold">Procurar no site</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="drag-target"></div>
 
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
-    </footer>
-
-    <!-- Modal - Opções busca -->
-    <div class="modal fade text-left" id="options-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">Busca produtos</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form action="#">
-                    <div class="modal-body">
-                        <p class="font-small-3">Numa tacada só, cote de diversos fornecedores. Compare preços e emita pedidos de compra. Alimentos, bebidas, embalagens, limpeza e utensílios.</p>
-
-                        <div class="form-body">
-                            <div class="row">
-                                <div class="col-md-6 col-12">
-                                    <label class="text-bold-700">Onde você está?</label>
-                                    <div class="form-group">
-                                        <select class="custom-select" id="">
-                                            <option value="AC">Acre</option>
-                                            <option value="AL">Alagoas</option>
-                                            <option value="AP">Amapá</option>
-                                            <option value="AM">Amazonas</option>
-                                            <option value="BA">Bahia</option>
-                                            <option value="CE">Ceará</option>
-                                            <option value="DF">Distrito Federal</option>
-                                            <option value="ES">Espírito Santo</option>
-                                            <option value="GO">Goiás</option>
-                                            <option value="MA">Maranhão</option>
-                                            <option value="MG">Minas Gerais</option>
-                                            <option value="MS">Mato Grosso do Sul</option>
-                                            <option value="MT">Mato Grosso</option>
-                                            <option value="PA">Pará</option>
-                                            <option value="PB">Paraíba</option>
-                                            <option value="PE">Pernambuco</option>
-                                            <option value="PI">Piaui</option>
-                                            <option value="PR">Paraná</option>
-                                            <option value="RJ">Rio de Janeiro</option>
-                                            <option value="RN">Rio Grande do Norte</option>
-                                            <option value="RO">Rondonia</option>
-                                            <option value="RR">Roraima</option>
-                                            <option value="RS">Rio Grande do Sul</option>
-                                            <option value="SC">Santa Catarina</option>
-                                            <option value="SE">Sergipe</option>
-                                            <option value="SP" selected="selected">São Paulo</option>
-                                            <option value="TO">Tocantins</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <label class="text-bold-700">Cotar como...</label>
-                                    <div class="form-group">
-                                        <select class="custom-select" id="">
-                                            <option value="PJ" selected="selected">Pessoa jurídica</option>
-                                            <option value="PF">Pessoa física</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary text-bold-600" data-dismiss="modal">Avançar</button>
-                    </div>
-                </form>
+    <div class="w-100 py-1 px-2 bg-secondary position-fixed" style="bottom: 0">
+        <div class="row">
+            <div class="col-6">
+                <p class="m-0 pt-50 pl-25 text-dark"><i class="feather icon-file-text font-medium-3 d-sm-inline d-none"></i> <span class="d-sm-inline d-none">Sua cotação tem</span> 83 produtos<span class="d-sm-inline d-none">, acionará</span> <span class="d-block d-sm-inline">7 fornecedores</span></span></p>
+            </div>
+            <div class="col-6 text-right">
+                <p class="m-0 pr-25"><button type="button" class="btn btn-primary waves-effect waves-light font-weight-bold"><i class="feather icon-send"></i>&nbsp; Enviar cotação</button></p>
             </div>
         </div>
     </div>
+
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
+    </footer>
 
     <!-- Modal - Dados do negócio -->
     <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">

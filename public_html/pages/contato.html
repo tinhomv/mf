@@ -39,7 +39,11 @@
                                 <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
                             </li>
                             <li class="nav-item nav-search">
-                                <a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span></a>
+                                <a class="nav-link-search ml-md-1">
+                                    <span class="nav-link-search-wrapper">
+                                        <i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span>
+                                    </span>
+                                </a>
                                 <form action="">
                                     <div class="search-input rounded-0">
                                         <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
@@ -122,7 +126,11 @@
                 <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
                 <div class="divider"><hr class="m-0"></div>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
-                <li class="nav-item mt-1"><a href="navegar-como.html" style="background: #eee;"><span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span></a></li>
+                <div class="nav-item mt-1 px-1">
+                    <a href="#" data-toggle="modal" data-target="#navegando-como" class="p-1 rounded text-body d-block" style="background: #eee;">
+                        <span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span>
+                    </a>
+                </div>
                 <li class="navigation-header"><span>Navegue por categorias</span></li>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Alimentos e Bebidas</span></a>
                     <ul class="menu-content font-small-3">
@@ -160,7 +168,7 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="content-header-left col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
                             <h2 class="content-header-title mb-0">Fale conosco</h2>
@@ -414,6 +422,78 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Navegando como... -->
+    <div class="modal fade text-left" id="navegando-como" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel4">Navegando como...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <p class="font-small-3">Numa tacada só, cote de diversos fornecedores. Compare preços e emita pedidos de compra. Alimentos, bebidas, embalagens, limpeza e utensílios.</p>
+                        <hr>
+                        <form class="form">
+                            <div class="form-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Onde você está?</label>
+                                            <select class="custom-select" id="">
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espírito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piaui</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RO">Rondonia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="SP" selected="selected">São Paulo</option>
+                                                <option value="TO">Tocantins</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Cotar como...</label>
+                                            <select class="custom-select" id="">
+                                                <option value="PJ" selected="selected">Pessoa jurídica</option>
+                                                <option value="PF">Pessoa física</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light w-100" data-dismiss="modal">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </form>
             </div>

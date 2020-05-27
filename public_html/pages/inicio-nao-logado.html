@@ -126,7 +126,11 @@
                 <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
                 <div class="divider"><hr class="m-0"></div>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
-                <li class="nav-item mt-1"><a href="navegar-como.html" style="background: #eee;"><span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span></a></li>
+                <div class="nav-item mt-1 px-1">
+                    <a href="#" data-toggle="modal" data-target="#navegando-como" class="p-1 rounded text-body d-block" style="background: #eee;">
+                        <span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span>
+                    </a>
+                </div>
                 <li class="navigation-header"><span>Navegue por categorias</span></li>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Alimentos e Bebidas</span></a>
                     <ul class="menu-content font-small-3">
@@ -164,127 +168,25 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper pb-0">
             <div class="content-body">
-                <section class="card m-auto" style="max-width: 70rem">
-                    <div class="card-header bg-success">
-                        <h4 class="card-title w-100 text-center text-white">Simplifique as compras do seu restaurante</h4>
-                        <h6 class="mb-2 w-100 text-center text-white">ou bar, padaria, minimercado, hotel...</h6>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="row d-md-none">
-                                <div class="col-4 text-center">
-                                    <img src="../assets/images/mf-logo-color.png" class="img-fluid mt-2" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <span class="font-small-3 font-weight-bold">Para restaurantes, hotéis, padarias, minimercados</span><br>
-                                    <span class="font-small-3">Cote com vários fornecedores numa só tacada, compare preços, emita pedidos de compra</span>
-                                </div>
-                            </div>
-                            <div class="d-md-block d-none">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="media">
-                                            <span class="mr-2 font-large-2">1</span>
-                                            <div class="media-body">
-                                                <h5 class="text-success font-weight-bold font-medium-1">Escolha os produtos</h5>
-                                                <span class="font-small-3">De alimentos à utensílios, de tudo para atender seu negócio</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="media">
-                                            <span class="mr-2 font-large-2">2</span>
-                                            <div class="media-body">
-                                                <h5 class="text-success font-weight-bold font-medium-1">Emita a cotação</h5>
-                                                <span class="font-small-3">Cotações para vários fornecedores numa só tacada</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="media">
-                                            <span class="mr-2 font-large-2">3</span>
-                                            <div class="media-body">
-                                                <h5 class="text-success font-weight-bold font-medium-1">Compare preços</h5>
-                                                <span class="font-small-3">Emita pedidos de compra separados por fornecedor</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <hr>
-
-                <section class="card">
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="row d-md-none">
-                                <div class="col-4 text-center">
-                                    <img src="../assets/images/mf-logo-color.png" class="img-fluid mt-2" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <span class="font-small-3 font-weight-bold">Para restaurantes, hotéis, padarias, minimercados</span><br>
-                                    <span class="font-small-3">Cote com vários fornecedores numa só tacada, compare preços, emita pedidos de compra</span>
-                                </div>
-                            </div>
-                            <div class="d-md-block d-none pt-1 px-2">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <p class="text-primary font-weight-bold" style="margin-bottom: 0.2rem;">Simplifique as compras <br>do seu restaurante</p>
-                                        <p class="font-small-3">ou bar, padaria, minimercado, hotel...</p>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="media">
-                                            <span class="mr-2 font-large-2">1</span>
-                                            <div class="media-body">
-                                                <h5 class="text-primary font-weight-bold font-medium-1">Escolha os produtos</h5>
-                                                <span class="font-small-3">De alimentos à utensílios, de tudo para atender seu negócio</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="media">
-                                            <span class="mr-2 font-large-2">2</span>
-                                            <div class="media-body">
-                                                <h5 class="text-primary font-weight-bold font-medium-1">Emita a cotação</h5>
-                                                <span class="font-small-3">Cotações para vários fornecedores numa só tacada</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="media">
-                                            <span class="mr-2 font-large-2">3</span>
-                                            <div class="media-body">
-                                                <h5 class="text-primary font-weight-bold font-medium-1">Compare preços</h5>
-                                                <span class="font-small-3">Emita pedidos de compra separados por fornecedor</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="card text-white" style="background: linear-gradient(118deg, #7367F0, rgba(115, 103, 240, 0.7));">
+                <section class="card mb-1 text-white" style="background: linear-gradient(118deg, #7367F0, rgba(115, 103, 240, 0.7));">
                     <div class="card-content">
                         <div class="card-body">
                             <div class="row d-md-none">
                                 <div class="col-4 text-center">
                                     <img src="../assets/images/mf-logo-white.png" class="img-fluid mt-2" alt="">
                                 </div>
-                                <div class="col-6">
-                                    <span class="font-small-3 font-weight-bold">Para restaurantes, hotéis, padarias, minimercados</span><br>
+                                <div class="col-8">
+                                    <span class="font-small-3 font-weight-bold d-block pb-1">Para restaurantes, hotéis, padarias, minimercados</span>
                                     <span class="font-small-3">Cote com vários fornecedores numa só tacada, compare preços, emita pedidos de compra</span>
                                 </div>
                             </div>
                             <div class="d-md-block d-none pt-1 px-2">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <p class="font-weight-bold" style="margin-bottom: 0.2rem;">Simplifique as compras <br>do seu restaurante</p>
-                                        <p class="font-small-3">ou bar, padaria, minimercado, hotel...</p>
+                                        <div style="border-right: solid 1px rgba(255,255,255,0.2);">
+                                            <p class="font-weight-bold" style="margin-bottom: 0.2rem;">Simplifique as compras <br>do seu restaurante</p>
+                                            <p class="font-small-3">ou bar, padaria, minimercado, hotel...</p>
+                                        </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="media">
@@ -346,16 +248,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-1" aria-expanded="false" aria-controls="collapseCotacaoCard-1" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-1" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-1" aria-expanded="false" aria-controls="collapseCotacaoCard-1" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-1" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-1" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -380,16 +278,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-2" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-2" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-2" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -404,7 +298,7 @@
                                 <div class="card-text border-top border-bottom p-1" style="background: rgba(34,41,47,.03);">
                                     <p class="m-0">Hellmann's</p>
                                     <p class="m-0 font-weight-bold">Cookie candy</p>
-                                    <p class="m-0">Lata / 300g</p>
+                                    <p class="m-0">Display 24x / 100g</p>
                                 </div>
                                 <div class="card-text p-1 pb-2">
                                     <span class="font-small-2">Sem lactose; Light. Lorem ipsum dolor sit amet, consectetur adi</span>
@@ -414,16 +308,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-3" aria-expanded="true" aria-controls="collapseCotacaoCard-3" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse show" id="collapseCotacaoCard-3" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" value="300" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-outline-dark bg-white waves-effect waves-light font-medium-3 px-1" style="border-color: #D9D9D9; border-top-right-radius: 0;" data-toggle="collapse" href="#collapseCotacaoCard-3" aria-expanded="false" aria-controls="collapseCotacaoCard-3"><i class="feather icon-x"></i></button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-3" aria-expanded="false" aria-controls="collapseCotacaoCard-3" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-3" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-3" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -448,16 +338,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-4" aria-expanded="true" aria-controls="collapseCotacaoCard-4" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse show" id="collapseCotacaoCard-4" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." value="900" style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-outline-dark bg-white waves-effect waves-light font-medium-3 px-1" style="border-color: #D9D9D9; border-top-right-radius: 0;" data-toggle="collapse" href="#collapseCotacaoCard-4" aria-expanded="false" aria-controls="collapseCotacaoCard-4"><i class="feather icon-x"></i></button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-4" aria-expanded="false" aria-controls="collapseCotacaoCard-4" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-4" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-4" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -482,16 +368,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-5" aria-expanded="false" aria-controls="collapseCotacaoCard-5" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-5" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-5" aria-expanded="false" aria-controls="collapseCotacaoCard-5" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-5" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-5" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -516,20 +398,16 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-6" aria-expanded="false" aria-controls="collapseCotacaoCard-6" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-6" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-6" aria-expanded="false" aria-controls="collapseCotacaoCard-6" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-6" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-6" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-6" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div class="row">
@@ -593,16 +471,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-7" aria-expanded="false" aria-controls="collapseCotacaoCard-7" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-7" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-7" aria-expanded="false" aria-controls="collapseCotacaoCard-7" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-7" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-7" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-7" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -627,16 +501,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-8" aria-expanded="false" aria-controls="collapseCotacaoCard-8" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-8" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-8" aria-expanded="false" aria-controls="collapseCotacaoCard-8" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-8" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-8" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-8" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -661,16 +531,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-9" aria-expanded="false" aria-controls="collapseCotacaoCard-9" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-9" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-9" aria-expanded="false" aria-controls="collapseCotacaoCard-9" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-9" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-9" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-9" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -695,16 +561,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-10" aria-expanded="false" aria-controls="collapseCotacaoCard-10" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-10" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-10" aria-expanded="false" aria-controls="collapseCotacaoCard-10" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-10" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-10" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-10" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -729,16 +591,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-11" aria-expanded="false" aria-controls="collapseCotacaoCard-11" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-11" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-11" aria-expanded="false" aria-controls="collapseCotacaoCard-11" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-11" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-11" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-11" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -800,16 +658,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-12" aria-expanded="false" aria-controls="collapseCotacaoCard-12" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-12" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-2" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -834,16 +688,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-13" aria-expanded="false" aria-controls="collapseCotacaoCard-13" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-13" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-2" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -868,16 +718,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-14" aria-expanded="false" aria-controls="collapseCotacaoCard-14" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-14" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-2" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -902,16 +748,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-15" aria-expanded="false" aria-controls="collapseCotacaoCard-15" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-15" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-2" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -936,16 +778,12 @@
                                 </div>
                             </div>
                             <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                <div class="p-1"><a data-toggle="collapse" href="#collapseCotacaoCard-16" aria-expanded="false" aria-controls="collapseCotacaoCard-16" class="card-link font-weight-bold d-block">Adicionar à cotação</a></div>
-
-                                <div class="input-group position-absolute collapse" id="collapseCotacaoCard-16" style="top: -1px;">
-                                    <input type="text" class="form-control pr-1" placeholder="Qtd." style="border-top-left-radius: 0;">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text font-small-3 border-left-0" style="padding-top: 1.1rem; padding-bottom: 1.1rem; border-color: #D9D9D9;">Lata</span>
-                                    </div>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light font-small-3 px-1" style="border-top-right-radius: 0">OK</button>
-                                    </div>
+                                <div class="py-1 bg-white rounded-bottom">
+                                    <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
+                                </div>
+                                <div class="position-absolute collapse w-100 rounded-bottom bg-primary" id="collapseCotacaoCard-2" style="top: 0;">
+                                    <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
+                                    <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -1056,6 +894,78 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Navegando como... -->
+    <div class="modal fade text-left" id="navegando-como" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel4">Navegando como...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <p class="font-small-3">Numa tacada só, cote de diversos fornecedores. Compare preços e emita pedidos de compra. Alimentos, bebidas, embalagens, limpeza e utensílios.</p>
+                        <hr>
+                        <form class="form">
+                            <div class="form-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Onde você está?</label>
+                                            <select class="custom-select" id="">
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espírito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piaui</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RO">Rondonia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="SP" selected="selected">São Paulo</option>
+                                                <option value="TO">Tocantins</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Cotar como...</label>
+                                            <select class="custom-select" id="">
+                                                <option value="PJ" selected="selected">Pessoa jurídica</option>
+                                                <option value="PF">Pessoa física</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light w-100" data-dismiss="modal">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </form>
             </div>

@@ -40,6 +40,28 @@ width: 80px;
 margin: 1rem;
 }
 
+.breadcrumb-mf {
+padding: 0 0 0.5rem 0 !important;
+}
+
+.list-group-mf-border li {
+border: none;
+/*border-bottom: 1px solid rgba(34, 41, 47, 0.125);*/
+}
+
+.list-group-mf-border li:nth-of-type(odd) {
+border-right: 1px solid rgba(34, 41, 47, 0.125);
+}
+
+.list-group-mf-border li:hover {
+background: rgba(200,200,200,0.1) !important;
+}
+
+.swiper-wrapper .chip:hover {
+opacity: 0.8;
+}
+
+
 @media only screen and (min-width: 768px) {
   .card .show-hover-mf {
     opacity: 0;
