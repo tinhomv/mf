@@ -38,29 +38,13 @@
                             <li class="nav-item d-sm-block d-none">
                                 <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
                             </li>
-                            <li class="nav-item nav-search">
-                                <a class="nav-link-search ml-md-1">
-                                    <span class="nav-link-search-wrapper">
-                                        <i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span>
-                                    </span>
-                                </a>
-                                <form action="">
-                                    <div class="search-input rounded-0">
-                                        <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                        <input class="input rounded-0" type="text" placeholder="Buscar produtos">
-                                        <div class="search-input-close"><i class="feather icon-x"></i></div>
-                                    </div>
-                                </form>
-                            </li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
-                        <li class="nav-item d-sm-inline d-none">
-                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><span>Pedidos de compra</span></a>
-                        </li>
                         <li class="nav-item position-relative">
-                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><span>Cotação e lista</span></a>
-                            <span class="badge badge-pill badge-up" style="background: #d11b6d; top: 8px; right: -4px;">38</span>
+                            <a href="#" class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;">
+                                <span>Sair do painel<span class="d-sm-inline d-none"> de cotação</span></span>
+                            </a>
                         </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
@@ -164,248 +148,212 @@
         </div>
     </div>
 
-    <div class="app-content content">
+    <div class="app-content content vh-100">
         <div class="header-navbar-shadow"></div>
-        <div class="content-wrapper pb-0">
+        <div class="content-wrapper p-0" style="margin-top: 4.50rem;">
             <div class="content-body">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h4 class="text-body">Revise sua cotação</h4>
-                        <p class="font-small-3">Revise antes de acionar os fornecedores</p>
-
-                        <div class="card collapse-icon accordion-icon-rotate shadow-sm">
-                            <div class="accordion" id="accordionCotacao" data-toggle-hover="true">
-                                <div class="collapse-bordered">
-                                    <div class="card bg-transparent">
-                                        <div class="card-header" id="headingCategoria1" data-toggle="collapse" role="button" data-target="#collapseCategoria1" aria-expanded="true" aria-controls="collapseCategoria1">
-                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
-                                                Alimentos e bebidas
-                                            </span>
-                                        </div>
-                                        <div id="collapseCategoria1" class="collapse show" aria-labelledby="headingCategoria1" data-parent="#accordionCotacao">
-                                            <div class="card-body font-small-3 pt-0">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bg-transparent">
-                                        <div class="card-header collapsed" id="headingCategoria2" data-toggle="collapse" role="button" data-target="#collapseCategoria2" aria-expanded="false" aria-controls="collapseCategoria2">
-                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
-                                                Embalagens
-                                            </span>
-                                        </div>
-                                        <div id="collapseCategoria2" class="collapse" aria-labelledby="headingCategoria2" data-parent="#accordionCotacao">
-                                            <div class="card-body font-small-3 pt-0">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card bg-transparent">
-                                        <div class="card-header collapsed" id="headingCategoria3" data-toggle="collapse" role="button" data-target="#collapseCategoria3" aria-expanded="false" aria-controls="collapseCategoria3">
-                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
-                                                Limpeza
-                                            </span>
-                                        </div>
-                                        <div id="collapseCategoria3" class="collapse" aria-labelledby="headingCategoria3" data-parent="#accordionCotacao">
-                                            <div class="card-body font-small-3 pt-0">
-                                                <ul class="list-group list-group-flush">
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-group-item px-25">
-                                                        <a href="#x" class="d-block">
-                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
-                                                            <strong>Nome da categoria</strong>
-                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row mx-md-0">
+                    <div class="col-md-3 p-0" style="border-right: solid 1px #D5D5D5;">
+                        <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <span class="float-right text-danger font-small-2 font-weight-bold"><i class="feather icon-clock"></i> Expira em 8h 43m</span>
+                            <h6 class="m-0">21/04/2020 14:30</h6>
                         </div>
+
+                        <div class="p-2">
+                            <button type="button" class="btn btn-outline-light bg-white btn-sm waves-effect waves-light float-right" disabled="">Comparar preços</button>
+                            <a href=""><i class="feather icon-sliders"></i> Filtrar </a>
+                        </div>
+
+                        <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 13.20rem;">
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-dollar-sign font-small-2"></i> ver os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-light">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Matheus Folhagem</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-dollar-sign font-small-2"></i> ver os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>Nome do fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1">21/04/2020</span>
+                                    <strong>XYZ Fornecedor XYZ Fornecedor XYZ Fornecedor</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-9">
-                        <div class="border-left pl-2">
-                            <a href="revisando-cotacao.html" title="Voltar"><i class="feather icon-arrow-left my-50 mr-1 float-left font-large-1"></i></a>
-                            <h4>Tipo de produto</h4>
-                            <p class="font-small-3">Produtos inclusos na cotação</p>
+                    <div class="col-md-9 p-0" style="background: #E5DDD5;">
+                        <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <a href="#x" title="Voltar" class="d-md-none"><i class="feather icon-arrow-left mr-1 mt-n25 float-left font-large-1"></i></a>
+                            <h6 class="m-0 font-weight-bold">Matheus Folhagem</h6>
                         </div>
 
-                        <div class="row">
-                            <div class="col-xl-3 col-md-4 col-6 mb-3">
-                                <div class="card h-100 font-small-3 mb-0">
-                                    <img class="rounded-top img-fluid" src="https://fakeimg.pl/360x200/?text=IMG" alt="">
-                                    <div class="card-body p-0 position-relative">
-                                        <div class="card-text border-top border-bottom p-1" style="background: rgba(34,41,47,.03);">
-                                            <p class="m-0">Hellmann's</p>
-                                            <p class="m-0 font-weight-bold">Cookie candy</p>
-                                            <p class="m-0">Lata / 300g</p>
-                                        </div>
-                                        <div class="card-text p-1 pb-4">
-                                            <span class="font-small-2">Sem lactose; Light. Lorem ipsum dolor sit amet, consectetur adi</span>
-                                        </div>
-                                        <div class="text-center position-absolute w-100 border-top py-50" style="bottom: 0">
-                                            <a href="#x" class="d-block">Incluir na lista</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                        <div class="py-1 bg-rgba-light rounded-bottom">
-                                            <a data-toggle="collapse" href="#collapseCotacaoCard-1" aria-expanded="false" aria-controls="collapseCotacaoCard-1" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
-                                        </div>
-                                        <div class="position-absolute collapse w-100 rounded-bottom bg-primary show" id="collapseCotacaoCard-1" style="top: 0;">
-                                            <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
-                                            <a href="#collapseCotacaoCard-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-1" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
-                                        </div>
+                        <div class="vh-100 overflow-auto" style="padding-bottom: 8.80rem;">
+                            <div class="card shadow-sm m-1">
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold text-primary">Aguardando o fornecedor apresentar seus preços</h6>
+                                    <p class="font-small-3">Não se preocupe, nós vamos avisar você por email quando ele responder.</p>
+                                    <div class="alert alert-warning font-small-3 mb-0 d-inline-block" role="alert">
+                                        <span class="text-dark">Fique atento ao seu email cadastrado: <strong>email@seudominio.com.br</strong></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-4 col-6 mb-3">
-                                <div class="card h-100 font-small-3 mb-0">
-                                    <img class="rounded-top img-fluid" src="https://fakeimg.pl/360x200/?text=IMG" alt="">
-                                    <div class="card-body p-0 position-relative">
-                                        <div class="card-text border-top border-bottom p-1" style="background: rgba(34,41,47,.03);">
-                                            <p class="m-0">Hellmann's</p>
-                                            <p class="m-0 font-weight-bold">Cookie candy</p>
-                                            <p class="m-0">Lata / 300g</p>
-                                        </div>
-                                        <div class="card-text p-1 pb-4">
-                                            <span class="font-small-2">Sem lactose;</span>
-                                        </div>
-                                        <div class="text-center position-absolute w-100 border-top py-50 bg-success" style="bottom: 0">
-                                            <a href="#x" class="d-block text-white">Na sua lista</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                        <div class="py-1 bg-rgba-light rounded-bottom">
-                                            <a data-toggle="collapse" href="#collapseCotacaoCard-2" aria-expanded="false" aria-controls="collapseCotacaoCard-2" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
-                                        </div>
-                                        <div class="position-absolute collapse w-100 rounded-bottom bg-primary show" id="collapseCotacaoCard-2" style="top: 0;">
-                                            <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
-                                            <a href="#collapseCotacaoCard-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-2" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-4 col-6 mb-3">
-                                <div class="card h-100 font-small-3 mb-0">
-                                    <img class="rounded-top img-fluid" src="https://fakeimg.pl/360x200/?text=IMG" alt="">
-                                    <div class="card-body p-0 position-relative">
-                                        <div class="card-text border-top border-bottom p-1" style="background: rgba(34,41,47,.03);">
-                                            <p class="m-0">Hellmann's</p>
-                                            <p class="m-0 font-weight-bold">Cookie candy</p>
-                                            <p class="m-0">Display 24x / 100g</p>
-                                        </div>
-                                        <div class="card-text p-1 pb-4">
-                                            <span class="font-small-2">Sem lactose; Light. Lorem ipsum dolor sit amet, consectetur adi. Lorem ipsum dolor sit amet</span>
-                                        </div>
-                                        <div class="text-center position-absolute w-100 border-top py-50 bg-success" style="bottom: 0">
-                                            <a href="#x" class="d-block text-white">Na sua lista</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                        <div class="py-1 bg-rgba-light rounded-bottom">
-                                            <a data-toggle="collapse" href="#collapseCotacaoCard-3" aria-expanded="false" aria-controls="collapseCotacaoCard-3" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
-                                        </div>
-                                        <div class="position-absolute collapse w-100 rounded-bottom bg-primary show" id="collapseCotacaoCard-3" style="top: 0;">
-                                            <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
-                                            <a href="#collapseCotacaoCard-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-3" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-4 col-6 mb-3">
-                                <div class="card h-100 font-small-3 mb-0">
-                                    <img class="rounded-top img-fluid" src="https://fakeimg.pl/360x200/?text=IMG" alt="">
-                                    <div class="card-body p-0 position-relative">
-                                        <div class="card-text border-top border-bottom p-1" style="background: rgba(34,41,47,.03);">
-                                            <p class="m-0">Hellmann's</p>
-                                            <p class="m-0 font-weight-bold">Cookie candy</p>
-                                            <p class="m-0">Lata / 300g</p>
-                                        </div>
-                                        <div class="card-text p-1 pb-4">
-                                            <span class="font-small-2">Sem lactose; Light. Lorem ipsum dolor sit amet, consectetur adi</span>
-                                        </div>
-                                        <div class="text-center position-absolute w-100 border-top py-50 bg-success" style="bottom: 0">
-                                            <a href="#x" class="d-block text-white">Na sua lista</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer clearfix p-0 bg-white text-center position-relative">
-                                        <div class="py-1 bg-rgba-light rounded-bottom">
-                                            <a data-toggle="collapse" href="#collapseCotacaoCard-4" aria-expanded="false" aria-controls="collapseCotacaoCard-4" class="card-link font-weight-bold d-block">Adicionar à cotação</a>
-                                        </div>
-                                        <div class="position-absolute collapse w-100 rounded-bottom bg-primary show" id="collapseCotacaoCard-4" style="top: 0;">
-                                            <span class="py-1 float-left w-75 font-weight-bold d-block text-white">Adicionado</span>
-                                            <a href="#collapseCotacaoCard-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapseCotacaoCard-4" title="Remover da cotação" class="float-right bg-white d-block w-25 text-body" style="border-bottom-right-radius: 0.4rem; padding: 0.9rem 0;"><i class="feather icon-x font-medium-3"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="mt-1 mb-3">
-                            <h6>Faltou algum produto?</h6>
-                            <p class="mt-1">
-                                <a href="#x" class="btn btn-outline-primary bg-white text-bold-600 waves-effect waves-light mr-2 mb-1">Adicionar da minha lista</a>
-                                <a href="#x" class="font-weight-bold d-sm-inline d-block mb-1">Procurar no site</a>
-                            </p>
+                            <div class="card shadow-sm m-1">
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold mb-2 text-primary">Este fornecedor tem estes produtos da sua cotação:</h6>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4 class="card-title">Família</h4>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto Tipo de produto Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h4 class="card-title">Família</h4>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-6">
+                                            <div class="card">
+                                                <h6 class="card-subtitle text-muted mb-1">Nome da categoria</h6>
+                                                <ul class="list-group list-group-flush font-small-3">
+                                                    <li class="list-group-item px-50 bg-white">Tipo de produto</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm m-1">
+                                <div class="card-body">
+                                    <h6 class="font-weight-bold text-primary mb-2">O que você poderá fazer quando ele responder?</h6>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p><i class="feather icon-tag mr-1"></i> Ver os preços de seus produtos</p>
+                                            <p><i class="feather icon-copy mr-1"></i> Comparar com outros fornecedores</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><i class="feather icon-truck mr-1"></i> Ver condições de pagamento e entrega</p>
+                                            <p><i class="feather icon-shopping-bag mr-1"></i> Emitir pedidos de compra</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -415,14 +363,6 @@
 
     <div class="drag-target"></div>
 
-    <div class="w-100 py-1 px-2 bg-secondary position-fixed" style="bottom: 0">
-        <p class="m-0 pt-50 pl-25 text-dark float-left"><i class="feather icon-file-text font-medium-3 d-sm-inline d-none"></i> <span class="d-sm-inline d-none">Sua cotação tem</span> 83 produtos</span></p>
-        <p class="m-0 pr-25 float-right"><button type="button" class="btn btn-primary waves-effect waves-light font-weight-bold"><i class="feather icon-send"></i>&nbsp; Enviar cotação</button></p>
-    </div>
-
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
-    </footer>
 
     <!-- Modal - Dados do negócio -->
     <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
