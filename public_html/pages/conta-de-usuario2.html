@@ -26,7 +26,7 @@
 
     <div class="header-navbar-shadow"></div>
 
-    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-verde">
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-laranja">
         <div class="navbar-wrapper">
             <div class="navbar-container content">
                 <div class="navbar-collapse" id="navbar-mobile">
@@ -38,30 +38,9 @@
                             <li class="nav-item d-sm-block d-none">
                                 <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
                             </li>
-                            <li class="nav-item nav-search">
-                                <a class="nav-link-search ml-md-1">
-                                    <span class="nav-link-search-wrapper">
-                                        <i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span>
-                                    </span>
-                                </a>
-                                <form action="">
-                                    <div class="search-input rounded-0">
-                                        <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                        <input class="input rounded-0" type="text" placeholder="Buscar produtos">
-                                        <div class="search-input-close"><i class="feather icon-x"></i></div>
-                                    </div>
-                                </form>
-                            </li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
-                        <li class="nav-item d-sm-inline d-none">
-                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><span>Pedidos de compra</span></a>
-                        </li>
-                        <li class="nav-item position-relative">
-                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><span>Cotação e lista</span></a>
-                            <span class="badge badge-pill badge-up" style="background: #d11b6d; top: 8px; right: -4px;">38</span>
-                        </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none">
@@ -70,14 +49,14 @@
                                 <span><img class="round" src="../assets/images/avatar-default.png" alt="avatar" height="40" width="40"></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item disabled bg-mf-verde text-white" href="#" tabindex="-1" aria-disabled="true">Vuexy Company</a>
+                                <a class="dropdown-item disabled bg-mf-laranja text-white" href="#" tabindex="-1" aria-disabled="true">Vuexy Company</a>
                                 <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">John Doe</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><i class="feather icon-refresh-ccw"></i> Trocar usuário</a>
-                                <a class="dropdown-item text-warning" href="#" ><i class="fa fa-exchange"></i> Modo fornecedor</a>
+                                <a class="dropdown-item color-mf-verde" href="#" ><i class="fa fa-exchange"></i> Modo comprador</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dados-do-negocio"><i class="feather icon-info"></i> Dados do negócio</a>
-                                <a class="dropdown-item" href="conta-de-usuario.html"><i class="feather icon-user"></i> Conta de usuário</a>
+                                <a class="dropdown-item" href="conta-de-usuario2.html"><i class="feather icon-user"></i> Conta de usuário</a>
                                 <a class="dropdown-item" href="#"><i class="feather icon-log-out"></i> Sair</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sobre-mf">Sobre o Meu Fornecedor</a>
@@ -110,56 +89,18 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item text-white bg-primary text-center p-2 mb-1">
-                    <span class="d-block font-weight-bold font-medium-3">38 produtos</span>
-                    <span class="d-block font-small-3 mb-1">para cotar agora</span>
-                    <a href="#x" class="btn font-small-3 font-weight-bold bg-white text-primary width-100 m-auto">Avançar</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#x">
-                        <span class="menu-title">Sua lista (412 produtos)</span>
-                    </a>
-                    <i class="font-small-2 ml-1">Produtos favoritados para sua cotação</i>
-                </li>
                 <div class="divider"><hr class="m-0"></div>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações abertas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações em andamento</span></a></li>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
-                <div class="divider"><hr class="m-0"></div>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
-                <div class="nav-item mt-1 px-1">
-                    <a href="#" data-toggle="modal" data-target="#navegando-como" class="p-1 rounded text-body d-block" style="background: #eee;">
-                        <span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span>
-                    </a>
-                </div>
-                <li class="navigation-header"><span>Navegue por categorias</span></li>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Alimentos e Bebidas</span></a>
-                    <ul class="menu-content font-small-3">
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Embalagens</span></a>
-                    <ul class="menu-content font-small-3">
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Limpeza</span></a>
-                    <ul class="menu-content font-small-3">
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Utensilios</span></a>
-                    <ul class="menu-content font-small-3">
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
-                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
-                    </ul>
-                </li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Seu catálogo de produtos</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="navigation-header"><span>Atendimento ao seu cliente</span></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Valor mínimo de pedido</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Área de entrega/atendimento</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Prazo e/ou rota de entrega</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Condições de pagamento</span></a></li>
             </ul>
         </div>
     </div>
@@ -375,78 +316,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal - Navegando como... -->
-    <div class="modal fade text-left" id="navegando-como" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel4">Navegando como...</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form action="#">
-                    <div class="modal-body">
-                        <p class="font-small-3">Numa tacada só, cote de diversos fornecedores. Compare preços e emita pedidos de compra. Alimentos, bebidas, embalagens, limpeza e utensílios.</p>
-                        <hr>
-                        <form class="form">
-                            <div class="form-body">
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group">
-                                            <label for="" class="font-weight-bold">Onde você está?</label>
-                                            <select class="custom-select" id="">
-                                                <option value="AC">Acre</option>
-                                                <option value="AL">Alagoas</option>
-                                                <option value="AP">Amapá</option>
-                                                <option value="AM">Amazonas</option>
-                                                <option value="BA">Bahia</option>
-                                                <option value="CE">Ceará</option>
-                                                <option value="DF">Distrito Federal</option>
-                                                <option value="ES">Espírito Santo</option>
-                                                <option value="GO">Goiás</option>
-                                                <option value="MA">Maranhão</option>
-                                                <option value="MG">Minas Gerais</option>
-                                                <option value="MS">Mato Grosso do Sul</option>
-                                                <option value="MT">Mato Grosso</option>
-                                                <option value="PA">Pará</option>
-                                                <option value="PB">Paraíba</option>
-                                                <option value="PE">Pernambuco</option>
-                                                <option value="PI">Piaui</option>
-                                                <option value="PR">Paraná</option>
-                                                <option value="RJ">Rio de Janeiro</option>
-                                                <option value="RN">Rio Grande do Norte</option>
-                                                <option value="RO">Rondonia</option>
-                                                <option value="RR">Roraima</option>
-                                                <option value="RS">Rio Grande do Sul</option>
-                                                <option value="SC">Santa Catarina</option>
-                                                <option value="SE">Sergipe</option>
-                                                <option value="SP" selected="selected">São Paulo</option>
-                                                <option value="TO">Tocantins</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="form-group">
-                                            <label for="" class="font-weight-bold">Cotar como...</label>
-                                            <select class="custom-select" id="">
-                                                <option value="PJ" selected="selected">Pessoa jurídica</option>
-                                                <option value="PF">Pessoa física</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light w-100" data-dismiss="modal">Salvar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </form>
             </div>

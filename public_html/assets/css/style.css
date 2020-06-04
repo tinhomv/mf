@@ -6,16 +6,28 @@ a {
 color: #007bff;
 }
 
+.bg-mf-laranja {
+background-color: #f57f17 !important;
+}
+
 .bg-mf-verde {
 background-color: #0cb695 !important;
 }
 
 .color-mf-verde {
-color: #0CB695;
+color: #0CB695 !important;
+}
+
+.color-mf-laranja {
+color: #f57f17 !important;
 }
 
 .border-top-green {
 border-top: solid 5px #0CB695;
+}
+
+.border-top-orange {
+border-top: solid 5px #f57f17;
 }
 
 .btn-outline-orange, .btn-outline-orange:hover {
@@ -79,6 +91,14 @@ height: 100%;
 width: 100%;
 top: 0;
 left: 0;
+}
+
+.mf-item-list-active {
+background-color: #ECEDEF;
+}
+
+.mf-item-list a:hover {
+background-color: #F8F8F8;
 }
 
 
