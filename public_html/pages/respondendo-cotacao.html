@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html class="loading" lang="pt-BR" data-textdirection="ltr">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <title>Meu Fornecedor</title>
+    <link rel="apple-touch-icon" href="../assets/images/favicon-180x180.png">
+    <link rel="icon" href="../assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/extensions/ekko-lightbox.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+ 
+</head>
+
+<body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <div class="header-navbar-shadow"></div>
+
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-laranja">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu mr-auto">
+                                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#" title="Menu principal"><i class="ficon feather icon-menu"></i></a>
+                            </li>
+                            <li class="nav-item d-sm-block d-none">
+                                <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none">
+                                    <span class="user-status">John Doe</span>
+                                </div>
+                                <span><img class="round" src="../assets/images/avatar-default.png" alt="avatar" height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item disabled bg-mf-laranja text-white" href="#" tabindex="-1" aria-disabled="true">Vuexy Company</a>
+                                <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">John Doe</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="feather icon-refresh-ccw"></i> Trocar usuário</a>
+                                <a class="dropdown-item color-mf-verde" href="#" ><i class="fa fa-exchange"></i> Modo comprador</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dados-do-negocio"><i class="feather icon-info"></i> Dados do negócio</a>
+                                <a class="dropdown-item" href="conta-de-usuario2.html"><i class="feather icon-user"></i> Conta de usuário</a>
+                                <a class="dropdown-item" href="#"><i class="feather icon-log-out"></i> Sair</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sobre-mf">Sobre o Meu Fornecedor</a>
+                                <a class="dropdown-item" href="contato.html">Contato</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#termos-mf">Termos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="#x">
+                        <div class="brand-logo"></div>
+                        <h2 class="brand-text mb-0">Meu Fornecedor</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="feather icon-x font-medium-4 primary toggle-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações em andamento</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Seu catálogo de produtos</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="navigation-header"><span>Atendimento ao seu cliente</span></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Valor mínimo de pedido</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Área de entrega/atendimento</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Prazo e/ou rota de entrega</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Condições de pagamento</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="app-content content">
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+                <div class="p-2" style="margin: -2.35rem -2.20rem 1.50rem -2.20rem; background: #EDEDED; border-bottom: solid 1px #D5D5D5;">
+                    <div class="px-75">
+                        <span class="float-none float-sm-right text-danger font-weight-bold font-small-3 d-block pl-3 pl-0"><i class="feather icon-clock mr-50"></i> Expira em 8h 43m</span>
+                        <a href="#x" title="Voltar" class="d-md-none"><i class="feather icon-arrow-left mr-1 mt-n25 float-left font-large-1"></i></a>
+                        <h6 class="m-0 font-weight-bold">Restaurante dos Sabores <a href="" class="font-small-2 ml-50">Saiba mais</a></h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body pb-0">
+                                <h4 class="card-title"><i class="feather icon-truck font-medium-2 mr-50"></i> Condições de entrega</h4>
+                                <div class="mt-2">
+                                    <strong>Prazo padrão</strong> 
+                                    <a href="#" class="ml-50">Editar</a>
+                                    <span class="d-block font-small-3 mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est possimus unde, quasi.</span>
+                                </div>
+                                <div class="mt-2">
+                                    <strong>Rota / Intinerário</strong>
+                                    <a href="#" class="ml-50">Editar</a>
+                                    <span class="d-block font-small-3 mt-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est possimus unde, quasi.</span>
+                                </div>
+                                <div class="mt-2">
+                                    <strong>Taxa de frete</strong>
+                                    <textarea class="form-control mt-25" id="" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body pb-0">
+                                <h4 class="card-title"><i class="feather icon-dollar-sign font-medium-2 mr-50"></i> Condições financeiras</h4>
+                                <div class="mt-2">
+                                    <strong>Valor mínimo</strong>
+                                    <a href="#" class="ml-50">Editar</a>
+                                    <span class="d-block font-small-3 mt-25">R$ 300,00</span>
+                                </div>
+                                <div class="mt-2">
+                                    <strong>Valor máximo de pedido</strong>
+                                    <fieldset class="form-label-group form-group has-icon-left mt-25">
+                                        <input type="text" class="form-control" id="" placeholder="0,00">
+                                        <div class="form-control-position text-muted">R$</div>
+                                    </fieldset>
+                                </div>
+                                <div class="mt-2">
+                                    <strong>Condições de pagamento</strong>
+                                    <a href="#" class="ml-50">Editar</a>
+                                    <div class="vs-checkbox-con vs-checkbox-primary mt-1">
+                                        <input type="checkbox" value="">
+                                        <span class="vs-checkbox">
+                                            <span class="vs-checkbox--check">
+                                                <i class="vs-icon feather icon-check"></i>
+                                            </span>
+                                        </span>
+                                        <span>Opção 1</span>
+                                    </div>
+                                    <div class="vs-checkbox-con vs-checkbox-primary mt-1">
+                                        <input type="checkbox" value="" checked="">
+                                        <span class="vs-checkbox">
+                                            <span class="vs-checkbox--check">
+                                                <i class="vs-icon feather icon-check"></i>
+                                            </span>
+                                        </span>
+                                        <span>Opção 2</span>
+                                    </div>
+                                    <div class="vs-checkbox-con vs-checkbox-primary mt-1">
+                                        <input type="checkbox" value="">
+                                        <span class="vs-checkbox">
+                                            <span class="vs-checkbox--check">
+                                                <i class="vs-icon feather icon-check"></i>
+                                            </span>
+                                        </span>
+                                        <span>Opção 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <h3>Família</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6 mb-5 pb-2">
+                        <h5 class="font-medium-1 mb-25 overflow-hidden" style="height: 20px">Maionese</h5>
+                        <h6 class="font-small-2 overflow-hidden disabled-opacity" style="height: 13px">Nome da categoria</h6>
+                        <div class="card h-100 font-small-3 mb-0">
+                            <div class="card-body p-0">
+                                <div class="card-text border-bottom p-1 rounded-top" style="background: rgba(34,41,47,.03);">
+                                    <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" title="Foto do produto" data-title="Maionese" class="float-right">
+                                        <i class="feather icon-image font-medium-1"></i>
+                                    </a>
+                                    <p class="m-0">Hellmann's</p>
+                                    <p class="m-0">Cebola</p>
+                                    <p class="m-0">S/ lactose; Light</p>
+                                    <span class="d-block disabled-opacity">Lorem ipsum dolor sit amet, consectetur elit.</span>
+                                    <p class="m-0 font-weight-bold">Display | 90 g | 24 unid.</p>
+                                </div>
+                                <div class="card-text mb-n3">
+                                    <div class="p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control border-warning bg-rgba-warning" placeholder="Preço" value="">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Display | 90 g | 24 unid.">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1 disabled-opacity">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="p/ Kg">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2 disabled-opacity">Código: <strong>XY 0001</strong></p>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-muted mr-50">Com estoque</span>
+                                            <span class="text-danger">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                    <div class="border-top p-1 pt-2">
+                                        <fieldset class="form-label-group form-group position-relative input-divider-right mb-1">
+                                            <input type="text" class="form-control" placeholder="Preço" value="9.999,99">
+                                            <div class="form-control-position" data-toggle="tooltip" data-placement="top" title="Cx. c/ 12">
+                                                <i class="feather icon-help-circle font-medium-1"></i>
+                                            </div>
+                                            <label>Preço</label>
+                                        </fieldset>
+                                        <p class="mb-0 font-small-2">
+                                            <span class="text-success mr-50">Com estoque</span>
+                                            <span class="text-muted">Sem estoque</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters bg-white border-light rounded shadow-sm align-items-center mt-1">
+                    <div class="col-4 p-1">
+                        <button type="button" class="btn btn-outline-primary px-1 text-bold-600 waves-effect waves-light"><i class="feather icon-arrow-left mr-25 d-sm-inline d-none"></i> Voltar</button>
+                    </div>
+                    <div class="col-4 p-1 text-center">
+                        Pág<span class="d-sm-inline d-none">ina</span>  1, de 7
+                    </div>
+                    <div class="col-4 p-1 text-right">
+                        <button type="button" class="btn btn-primary px-1 text-bold-600 waves-effect waves-light">Salvar <span class="d-sm-inline d-none">e avançar</span> <i class="feather icon-arrow-right ml-25 d-sm-inline d-none"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="drag-target"></div>
+
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
+    </footer>
+
+    <!-- Modal - Dados do negócio -->
+    <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Dados do negócio</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover-animation mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Nome fantasia:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Razão social:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CNPJ:</th>
+                                        <td>00.000.000/0001-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Endereço:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Bairro:</th>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Município/UF:</th>
+                                        <td>SP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-warning mt-2" role="alert">
+                            <i class="feather icon-alert-circle mr-1 align-middle float-left" style="font-size: 2rem;"></i>
+                            <span class="text-dark">Para alterar os dados acima, <a href="contato.html">clique aqui</a> e entre em contato conosco.</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Sobre o Meu Fornecedor -->
+    <div class="modal fade text-left" id="sobre-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Sobre o Meu Fornecedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Termos -->
+    <div class="modal fade text-left" id="termos-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Termos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/vendors/js/vendors.min.js"></script>
+    <script src="../assets/js/app-menu.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+
+    <script src="../assets/js/extensions/ekko-lightbox.min.js"></script>
+
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+
+</body>
+</html>

@@ -108,85 +108,208 @@
     <div class="app-content content">
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
-            <div class="content-header row">
-                <div class="content-header-left col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title">Defina suas condições de atendimento</h2>
-                            <p class="mb-0">Depois de configurar tudo, o seu negócio ficará disponível para receber demandas dos clientes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="content-body">
                 <div class="row">
-                    <div class="col mb-2">
-                        <div class="card h-100 font-small-3 mb-1 shadow-sm">
-                            <div class="card-body p-1">
-                                <div class="card-text text-center">
-                                    <p class="mt-1"><i class="feather icon-users font-large-2 text-muted"></i></p>
-                                    <p class="font-weight-bold font-medium-2 my-2">Tipo de<br> cliente</p>
-                                    <p class="mb-0 mt-1"><a href="" class="btn btn-primary waves-effect waves-light">Definir</a></p>
+                    <div class="col-md-3">
+                        <h4 class="text-body">Seu catálogo de produtos</h4>
+                        <p class="font-small-3">Confira tudo cadastrado no sistema</p>
+
+                        <div class="card collapse-icon accordion-icon-rotate shadow-sm">
+                            <div class="accordion" id="accordionCotacao" data-toggle-hover="true">
+                                <div class="collapse-bordered">
+                                    <div class="card bg-transparent">
+                                        <div class="card-header" id="headingCategoria1" data-toggle="collapse" role="button" data-target="#collapseCategoria1" aria-expanded="true" aria-controls="collapseCategoria1">
+                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
+                                                Alimentos e bebidas
+                                            </span>
+                                        </div>
+                                        <div id="collapseCategoria1" class="collapse show" aria-labelledby="headingCategoria1" data-parent="#accordionCotacao">
+                                            <div class="card-body font-small-3 pt-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-transparent">
+                                        <div class="card-header collapsed" id="headingCategoria2" data-toggle="collapse" role="button" data-target="#collapseCategoria2" aria-expanded="false" aria-controls="collapseCategoria2">
+                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
+                                                Embalagens
+                                            </span>
+                                        </div>
+                                        <div id="collapseCategoria2" class="collapse" aria-labelledby="headingCategoria2" data-parent="#accordionCotacao">
+                                            <div class="card-body font-small-3 pt-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-transparent">
+                                        <div class="card-header collapsed" id="headingCategoria3" data-toggle="collapse" role="button" data-target="#collapseCategoria3" aria-expanded="false" aria-controls="collapseCategoria3">
+                                            <span class="collapse-title collapse-hover-title font-small-3 font-weight-bold">
+                                                Limpeza
+                                            </span>
+                                        </div>
+                                        <div id="collapseCategoria3" class="collapse" aria-labelledby="headingCategoria3" data-parent="#accordionCotacao">
+                                            <div class="card-body font-small-3 pt-0">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-group-item px-25">
+                                                        <a href="#x" class="d-block">
+                                                            <i class="feather icon-chevron-right mt-25 float-right font-medium-1 d-md-none"></i>
+                                                            <strong>Nome da categoria</strong>
+                                                            <span class="d-block text-body mt-25">12 tipos de produtos</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-footer p-1 text-center font-weight-bold bg-success">
-                                <span class="text-white"><i class="feather icon-check mr-50 font-medium-1"></i> Pronto!</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-2">
-                        <div class="card h-100 font-small-3 mb-1 shadow-sm">
-                            <div class="card-body p-1">
-                                <div class="card-text text-center">
-                                    <p class="mt-1"><i class="feather icon-map font-large-2 text-muted"></i></p>
-                                    <p class="font-weight-bold font-medium-2 my-2">Área de entrega / atendimento</p>
-                                    <p class="mb-0 mt-1"><a href="" class="btn btn-primary waves-effect waves-light">Definir</a></p>
-                                </div>
-                            </div>
-                            <div class="card-footer p-1 text-center font-weight-bold bg-danger">
-                                <span class="text-white"><i class="feather icon-alert-circle mr-50 font-medium-1"></i> Ainda não definiu</span>
-                            </div>
+                    <div class="col-md-9">
+                        <div class="border-left pl-2">
+                            <a href="#x" title="Voltar"><i class="feather icon-arrow-left my-50 mr-1 float-left font-large-1 d-md-none"></i></a>
+                            <h4>Nome da categoria</h4>
+                            <p class="font-small-3">Produtos cadastrados no sistema</p>
                         </div>
-                    </div>
-                    <div class="col mb-2">
-                        <div class="card h-100 font-small-3 mb-1 shadow-sm">
-                            <div class="card-body p-1">
-                                <div class="card-text text-center">
-                                    <p class="mt-1"><i class="feather icon-truck font-large-2 text-muted"></i></p>
-                                    <p class="font-weight-bold font-medium-2 my-2">Forma de entrega / atendimento</p>
-                                    <p class="mb-0 mt-1"><a href="" class="btn btn-primary waves-effect waves-light">Definir</a></p>
+                        <div class="row pl-1">
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="card-footer p-1 text-center font-weight-bold bg-success">
-                                <span class="text-white"><i class="feather icon-check mr-50 font-medium-1"></i> Pronto!</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-2">
-                        <div class="card h-100 font-small-3 mb-1 shadow-sm">
-                            <div class="card-body p-1">
-                                <div class="card-text text-center">
-                                    <p class="mt-1"><i class="feather icon-tag font-large-2 text-muted"></i></p>
-                                    <p class="font-weight-bold font-medium-2 my-2">Valor mínimo<br> de pedido</p>
-                                    <p class="mb-0 mt-1"><a href="" class="btn btn-primary waves-effect waves-light">Definir</a></p>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="card-footer p-1 text-center font-weight-bold bg-success">
-                                <span class="text-white"><i class="feather icon-check mr-50 font-medium-1"></i> Pronto!</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-2">
-                        <div class="card h-100 font-small-3 mb-1 shadow-sm">
-                            <div class="card-body p-1">
-                                <div class="card-text text-center">
-                                    <p class="mt-1"><i class="feather icon-dollar-sign font-large-2 text-muted"></i></p>
-                                    <p class="font-weight-bold font-medium-2 my-2">Formas de<br> pagamento</p>
-                                    <p class="mb-0 mt-1"><a href="" class="btn btn-primary waves-effect waves-light">Definir</a></p>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="card-footer p-1 text-center font-weight-bold bg-success">
-                                <span class="text-white"><i class="feather icon-check mr-50 font-medium-1"></i> Pronto!</span>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-1 pl-0">
+                                <div class="card h-100 shadow-sm p-1 font-small-3 mb-0">
+                                    <a href="visualizacao-do-catalogo2.html">
+                                        <i class="feather icon-arrow-right mt-25 float-right font-medium-1"></i>
+                                        <strong>Tipo de produto</strong>
+                                        <span class="d-block text-body mt-25">21 produtos</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

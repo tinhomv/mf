@@ -101,6 +101,39 @@ background-color: #ECEDEF;
 background-color: #F8F8F8;
 }
 
+.mf-chat .card:before {
+width: 0;
+height: 0;
+content: "";
+top: 0;
+position: absolute;
+border-style: solid;
+}
+
+.mf-chat-left .card:before {
+left: -10px;
+border-width: 0 15px 15px 0;
+border-color: transparent #ffffff transparent transparent;
+}
+
+.mf-chat-right .card:before {
+right: -10px;
+border-width: 15px 15px 0 0;
+border-color: #DFF7EA transparent transparent transparent;
+}
+
+.mf-chat-right .card {
+background: #DFF7EA;
+}
+
+.mf-chat-left {
+padding-right: 10rem;
+}
+
+.mf-chat-right {
+padding-left: 10rem;
+}
+
 
 @media only screen and (min-width: 768px) {
   .card .show-hover-mf {
