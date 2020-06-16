@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html class="loading" lang="pt-BR" data-textdirection="ltr">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <title>Meu Fornecedor</title>
+    <link rel="apple-touch-icon" href="../assets/images/favicon-180x180.png">
+    <link rel="icon" href="../assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+ 
+</head>
+
+<body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <div class="header-navbar-shadow"></div>
+
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-verde">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu mr-auto">
+                                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#" title="Menu principal"><i class="ficon feather icon-menu"></i></a>
+                            </li>
+                            <li class="nav-item d-sm-block d-none">
+                                <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="nav-item position-relative">
+                            <a href="#" class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;">
+                                <span>Sair do painel<span class="d-sm-inline d-none"> de cotação</span></span>
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none">
+                                    <span class="user-status">John Doe</span>
+                                </div>
+                                <span><img class="round" src="../assets/images/avatar-default.png" alt="avatar" height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item disabled bg-mf-verde text-white" href="#" tabindex="-1" aria-disabled="true">Vuexy Company</a>
+                                <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">John Doe</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="feather icon-refresh-ccw"></i> Trocar usuário</a>
+                                <a class="dropdown-item text-warning" href="#" ><i class="fa fa-exchange"></i> Modo fornecedor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dados-do-negocio"><i class="feather icon-info"></i> Dados do negócio</a>
+                                <a class="dropdown-item" href="conta-de-usuario.html"><i class="feather icon-user"></i> Conta de usuário</a>
+                                <a class="dropdown-item" href="#"><i class="feather icon-log-out"></i> Sair</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sobre-mf">Sobre o Meu Fornecedor</a>
+                                <a class="dropdown-item" href="contato.html">Contato</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#termos-mf">Termos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="#x">
+                        <div class="brand-logo"></div>
+                        <h2 class="brand-text mb-0">Meu Fornecedor</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="feather icon-x font-medium-4 primary toggle-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item text-white bg-primary text-center p-2 mb-1">
+                    <span class="d-block font-weight-bold font-medium-3">38 produtos</span>
+                    <span class="d-block font-small-3 mb-1">para cotar agora</span>
+                    <a href="#x" class="btn font-small-3 font-weight-bold bg-white text-primary width-100 m-auto">Avançar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#x">
+                        <span class="menu-title">Sua lista (412 produtos)</span>
+                    </a>
+                    <i class="font-small-2 ml-1">Produtos favoritados para sua cotação</i>
+                </li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações abertas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
+                <div class="nav-item mt-1 px-1">
+                    <a href="#" data-toggle="modal" data-target="#navegando-como" class="p-1 rounded text-body d-block" style="background: #eee;">
+                        <span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span>
+                    </a>
+                </div>
+                <li class="navigation-header"><span>Navegue por categorias</span></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Alimentos e Bebidas</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Embalagens</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Limpeza</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Utensilios</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="app-content content vh-100">
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper p-0" style="margin-top: 4.50rem;">
+            <div class="content-body">
+                <div class="row mx-md-0">
+                    <div class="col-md-2 p-0" style="border-right: solid 1px #D5D5D5;">
+                        <div class="py-75 px-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <span class="text-danger font-small-2 font-weight-bold"><i class="feather icon-clock"></i> Expira em 8h 43m</span>
+                            <h6 class="m-0 font-small-3 pt-25">21/04/2020 14:30</h6>
+                        </div>
+                        <div class="py-1 px-2">
+                            <button type="button" data-toggle="modal" data-target="#comparar-precos" class="btn btn-outline-primary px-50 bg-white font-weight-bold btn-sm waves-effect waves-light float-right">Comparar preços</button>
+                            <a href="#" data-toggle="modal" data-target="#filtro-fornecedores" class="font-small-3"><i class="feather icon-sliders"></i> Filtrar</a>
+                        </div>
+                        <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 13.20rem;">
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                        <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                    </span>
+                                    <strong>Fornecedor A</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-dollar-sign font-small-2"></i> ver os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor B</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-dollar-sign font-small-2"></i> ver os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor C</strong>
+                                    <span class="d-block mt-25 text-primary">
+                                        <i class="feather icon-dollar-sign font-small-2"></i> ver os preços 
+                                        <i class="feather icon-flag font-small-3 font-weight-bold text-danger ml-50"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1 text-right">21/04/2020</span>
+                                    <strong>Fornecedor D</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-clock font-small-2"></i> Aguardando os preços</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark disabled-opacity">
+                                    <span class="float-right text-body font-small-1 text-right">21/04/2020</span>
+                                    <strong>Fornecedor E</strong>
+                                    <span class="d-block mt-25"><i class="feather icon-thumbs-down font-small-2"></i> Recusou a cotação</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">21/04/2020</span>
+                                    <strong>Matheus Folhagem</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-shopping-cart font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 p-0" style="background: #E5DDD5;">
+                        <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <div class="float-right font-small-3">
+                                <div class="dropdown d-inline">
+                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="font-small-3"><i class="feather icon-headphones"></i><span class="d-md-inline d-none ml-25">Contato</span></a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="fa fa-whatsapp mr-25"></i> WhatsApp</a>
+                                        <a class="dropdown-item" href="#"><i class="feather icon-phone mr-25"></i> Telefone</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown d-inline ml-2">
+                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="font-small-3"><i class="feather icon-info"></i><span class="d-md-inline d-none ml-25">Informações</span></a>
+                                    <div class="dropdown-menu dropdown-menu-right" style="min-width: 240px">
+                                        <p class="p-1 m-0 font-small-3">
+                                            Restaurante dos Sabores Ltda<br>
+                                            00.000.000/0001-01<br><br>
+                                            Rua das Palmeiras, 100 - Sala 10<br>
+                                            Centro - São Paulo / SP<br>
+                                            01010-010
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#x" title="Voltar" class="d-md-none"><i class="feather icon-arrow-left mr-1 mt-n25 float-left font-large-1"></i></a>
+                            <h6 class="m-0 font-weight-bold">Matheus Folhagem</h6>
+                        </div>
+
+                        <div class="vh-100 overflow-auto" style="padding-bottom: 10rem;">
+                            <div class="card shadow-sm m-1">
+                                <div class="card-header d-block">
+                                    <div class="avatar bg-rgba-warning p-50 m-0 mr-3 mb-50 float-left" style="cursor: default;">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-check text-warning font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2">
+                                        <span class="float-right font-small-3">21/04/2020 - 22:10</span>
+                                        <h4 class="card-title color-mf-laranja">Pedido de compra emitido!</h4>
+                                        <p class="my-25">O fornecedor já foi informado, por email, sobre seu pedido.</p>
+                                        <p class="my-25"><a href="">Ver o pedido emitido</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="mt-1">E agora?</h5>
+                                    <p class="font-small-3 mb-0">Agora é só aguardar o contato do fornecedor.</p>
+                                    <h5 class="mt-3">Dica: compartilhe!</h5>
+                                    <p class="font-small-3 mb-0">Que tal compartilhar este pedido de compra com o responsável pelo seu estoque?</p>
+                                    <p class="font-small-3 mb-0 disabled-opacity">Assim, quando chegar os produtos, a pessoa pode conferir se todos os detalhes e preços estão de acordo.</p>
+                                    <p class="mb-0 mt-1">
+                                        <a href="#" class="btn btn-outline-success px-1 waves-effect waves-light mr-1"><i class="fa fa-whatsapp mr-50"></i> Pelo WhatsApp</a>
+                                        <a href="#" class="btn btn-flat-primary px-1 waves-effect waves-light"><i class="feather icon-link mr-50"></i> Copiar link</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="drag-target"></div>
+
+    <!-- Modal - Dados do negócio -->
+    <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Dados do negócio</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover-animation mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Nome fantasia:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Razão social:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CNPJ:</th>
+                                        <td>00.000.000/0001-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Endereço:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Bairro:</th>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Município/UF:</th>
+                                        <td>SP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-warning mt-2" role="alert">
+                            <i class="feather icon-alert-circle mr-1 align-middle float-left" style="font-size: 2rem;"></i>
+                            <span class="text-dark">Para alterar os dados acima, <a href="contato.html">clique aqui</a> e entre em contato conosco.</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Sobre o Meu Fornecedor -->
+    <div class="modal fade text-left" id="sobre-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Sobre o Meu Fornecedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Termos -->
+    <div class="modal fade text-left" id="termos-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Termos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Navegando como... -->
+    <div class="modal fade text-left" id="navegando-como" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel4">Navegando como...</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <p class="font-small-3">Numa tacada só, cote de diversos fornecedores. Compare preços e emita pedidos de compra. Alimentos, bebidas, embalagens, limpeza e utensílios.</p>
+                        <hr>
+                        <form class="form">
+                            <div class="form-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Onde você está?</label>
+                                            <select class="custom-select" id="">
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espírito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piaui</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RO">Rondonia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="SP" selected="selected">São Paulo</option>
+                                                <option value="TO">Tocantins</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="" class="font-weight-bold">Cotar como...</label>
+                                            <select class="custom-select" id="">
+                                                <option value="PJ" selected="selected">Pessoa jurídica</option>
+                                                <option value="PF">Pessoa física</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-primary waves-effect waves-light w-100" data-dismiss="modal">Salvar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Filtro Fornecedores -->
+    <div class="modal fade text-left" id="filtro-fornecedores" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalFiltro1">Filtrar fornecedores <span class="d-block font-weight-normal font-small-3">Escolha as categorias de produtos</span></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-rgba-success p-0">
+                    <div class="nav-vertical" style="background: linear-gradient(90deg, #DFF7EA 0%, #DFF7EA 33%, #fff 33%, #fff 100%);">
+                        <ul class="nav nav-tabs nav-left flex-column pr-0 pl-50 pt-1 mr-50" style="width: 33%" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="baseFiltroFornecedores-tab1" data-toggle="tab" aria-controls="tabFiltroFornecedores1" href="#tabFiltroFornecedores1" role="tab" aria-selected="true">
+                                    Alimentos e Bebidas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="baseFiltroFornecedores-tab2" data-toggle="tab" aria-controls="tabFiltroFornecedores2" href="#tabFiltroFornecedores2" role="tab" aria-selected="false">
+                                    Embalagens
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="baseFiltroFornecedores-tab3" data-toggle="tab" aria-controls="tabFiltroFornecedores3" href="#tabFiltroFornecedores3" role="tab" aria-selected="false">
+                                    Limpeza
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="baseFiltroFornecedores-tab4" data-toggle="tab" aria-controls="tabFiltroFornecedores4" href="#tabFiltroFornecedores4" role="tab" aria-selected="false">
+                                    Utensílios
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active pl-2 py-1" id="tabFiltroFornecedores1" role="tabpanel" aria-labelledby="baseFiltroFornecedores-tab1">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false" checked="">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false" checked="">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane pl-2 py-1" id="tabFiltroFornecedores2" role="tabpanel" aria-labelledby="baseFiltroFornecedores-tab2">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false" checked="">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane pl-2 py-1" id="tabFiltroFornecedores3" role="tabpanel" aria-labelledby="baseFiltroFornecedores-tab3">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false" checked="">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane pl-2 py-1" id="tabFiltroFornecedores4" role="tabpanel" aria-labelledby="baseFiltroFornecedores-tab4">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center py-25">
+                                        <span class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" value="false">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span>Nome da categoria</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-block">
+                    <span class="float-left mt-50 font-small-3">2 categorias selecionadas</span>
+                    <button type="button" class="btn btn-primary float-right px-1" data-dismiss="modal">Aplicar filtro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Comparar preços -->
+    <div class="modal fade text-left" id="comparar-precos" tabindex="-1" role="dialog" aria-labelledby="myModalComparar" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalComparar">Comparar preços <span class="d-block font-weight-normal font-small-3">Escolha o produto</span></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-rgba-success p-0">
+                    <div class="nav-vertical" style="background: linear-gradient(90deg, #DFF7EA 0%, #DFF7EA 33%, #fff 33%, #fff 100%);">
+                        <ul class="nav nav-tabs nav-left flex-column pr-0 pl-50 pt-1 mr-50" style="width: 33%" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="baseCompararPrecos-tab1" data-toggle="tab" aria-controls="tabCompararPrecos1" href="#tabCompararPrecos1" role="tab" aria-selected="true">
+                                    Alimentos e Bebidas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="baseCompararPrecos-tab2" data-toggle="tab" aria-controls="tabCompararPrecos2" href="#tabCompararPrecos2" role="tab" aria-selected="false">
+                                    Embalagens
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="baseCompararPrecos-tab3" data-toggle="tab" aria-controls="tabCompararPrecos3" href="#tabCompararPrecos3" role="tab" aria-selected="false">
+                                    Limpeza
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="baseCompararPrecos-tab4" data-toggle="tab" aria-controls="tabCompararPrecos4" href="#tabCompararPrecos4" role="tab" aria-selected="false">
+                                    Utensílios
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active pl-1" id="tabCompararPrecos1" role="tabpanel" aria-labelledby="baseCompararPrecos-tab1">
+                                <div id="accordionCompararCat1" role="tablist" aria-multiselectable="true">
+                                    <div class="card shadow-none collapse-icon accordion-icon-rotate mb-1">
+                                      <div class="accordion-default collapse-bordered">
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat1-heading1" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat1-accordion1" aria-expanded="false" aria-controls="Cat1-accordion1">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 1</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat1-accordion1" role="tabpanel" data-parent="#accordionCompararCat1" aria-labelledby="Cat1-heading1" class="collapse">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat1-heading2" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat1-accordion2" aria-expanded="false" aria-controls="Cat1-accordion2">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 1</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat1-accordion2" role="tabpanel" data-parent="#accordionCompararCat1" aria-labelledby="Cat1-heading2" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat1-heading3" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat1-accordion3" aria-expanded="false" aria-controls="Cat1-accordion3">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 1</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat1-accordion3" role="tabpanel" data-parent="#accordionCompararCat1" aria-labelledby="Cat1-heading3" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat1-heading4" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat1-accordion4" aria-expanded="false" aria-controls="Cat1-accordion4">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 1</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat1-accordion4" role="tabpanel" data-parent="#accordionCompararCat1" aria-labelledby="Cat1-heading4" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane pl-1" id="tabCompararPrecos2" role="tabpanel" aria-labelledby="baseCompararPrecos-tab2">
+                                <div id="accordionCompararCat2" role="tablist" aria-multiselectable="true">
+                                    <div class="card shadow-none collapse-icon accordion-icon-rotate mb-1">
+                                      <div class="accordion-default collapse-bordered">
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat2-heading1" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat2-accordion1" aria-expanded="false" aria-controls="Cat2-accordion1">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 2</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat2-accordion1" role="tabpanel" data-parent="#accordionCompararCat2" aria-labelledby="Cat2-heading1" class="collapse">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat2-heading2" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat2-accordion2" aria-expanded="false" aria-controls="Cat2-accordion2">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 2</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat2-accordion2" role="tabpanel" data-parent="#accordionCompararCat2" aria-labelledby="Cat2-heading2" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat2-heading3" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat2-accordion3" aria-expanded="false" aria-controls="Cat2-accordion3">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 2</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat2-accordion3" role="tabpanel" data-parent="#accordionCompararCat2" aria-labelledby="Cat2-heading3" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat2-heading4" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat2-accordion4" aria-expanded="false" aria-controls="Cat2-accordion4">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 2</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat2-accordion4" role="tabpanel" data-parent="#accordionCompararCat2" aria-labelledby="Cat2-heading4" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane pl-1" id="tabCompararPrecos3" role="tabpanel" aria-labelledby="baseCompararPrecos-tab3">
+                                <div id="accordionCompararCat3" role="tablist" aria-multiselectable="true">
+                                    <div class="card shadow-none collapse-icon accordion-icon-rotate mb-1">
+                                      <div class="accordion-default collapse-bordered">
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat3-heading1" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat3-accordion1" aria-expanded="false" aria-controls="Cat3-accordion1">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 3</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat3-accordion1" role="tabpanel" data-parent="#accordionCompararCat3" aria-labelledby="Cat3-heading1" class="collapse">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat3-heading2" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat3-accordion2" aria-expanded="false" aria-controls="Cat3-accordion2">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 3</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat3-accordion2" role="tabpanel" data-parent="#accordionCompararCat3" aria-labelledby="Cat3-heading2" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat3-heading3" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat3-accordion3" aria-expanded="false" aria-controls="Cat3-accordion3">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 3</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat3-accordion3" role="tabpanel" data-parent="#accordionCompararCat3" aria-labelledby="Cat3-heading3" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat3-heading4" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat3-accordion4" aria-expanded="false" aria-controls="Cat3-accordion4">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 3</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat3-accordion4" role="tabpanel" data-parent="#accordionCompararCat3" aria-labelledby="Cat3-heading4" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane pl-1" id="tabCompararPrecos4" role="tabpanel" aria-labelledby="baseCompararPrecos-tab4">
+                                <div id="accordionCompararCat4" role="tablist" aria-multiselectable="true">
+                                    <div class="card shadow-none collapse-icon accordion-icon-rotate mb-1">
+                                      <div class="accordion-default collapse-bordered">
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat4-heading1" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat4-accordion1" aria-expanded="false" aria-controls="Cat4-accordion1">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 4</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat4-accordion1" role="tabpanel" data-parent="#accordionCompararCat4" aria-labelledby="Cat4-heading1" class="collapse">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat4-heading2" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat4-accordion2" aria-expanded="false" aria-controls="Cat4-accordion2">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 4</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat4-accordion2" role="tabpanel" data-parent="#accordionCompararCat4" aria-labelledby="Cat4-heading2" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat4-heading3" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat4-accordion3" aria-expanded="false" aria-controls="Cat4-accordion3">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 4</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat4-accordion3" role="tabpanel" data-parent="#accordionCompararCat4" aria-labelledby="Cat4-heading3" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card collapse-header" style="border-color: #eee;">
+                                          <div id="Cat4-heading4" class="card-header collapse-header" data-toggle="collapse" role="button" data-target="#Cat4-accordion4" aria-expanded="false" aria-controls="Cat4-accordion4">
+                                            <span class="lead collapse-title">
+                                              <strong class="font-small-3">Nome da categoria 4</strong>
+                                              <span class="d-block font-small-2">999 produtos</span>
+                                            </span>
+                                          </div>
+                                          <div id="Cat4-accordion4" role="tabpanel" data-parent="#accordionCompararCat4" aria-labelledby="Cat4-heading4" class="collapse" aria-expanded="false">
+                                            <div class="card-content">
+                                              <div class="card-body pt-0">
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto pequeno<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto grande<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto bem comprido<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                                <span class="d-block my-50">
+                                                  <a href="#" class="btn btn-outline-primary py-50 px-2 waves-effect waves-light text-left font-small-3" style="border-radius: 30px;">Nome do produto mini<span class="d-block mt-25 text-body font-small-2">999 fornecedores</span></a>
+                                                </span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/vendors/js/vendors.min.js"></script>
+    <script src="../assets/js/app-menu.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+
+</body>
+</html>

@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.min.css">
 
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/pickadate.css">
+
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
  
 </head>
@@ -38,29 +40,13 @@
                             <li class="nav-item d-sm-block d-none">
                                 <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
                             </li>
-                            <li class="nav-item nav-search">
-                                <a class="nav-link-search ml-md-1">
-                                    <span class="nav-link-search-wrapper">
-                                        <i class="ficon feather icon-search"></i> <span class="d-sm-inline-block d-none font-small-3 text-search-header">Buscar produtos</span>
-                                    </span>
-                                </a>
-                                <form action="">
-                                    <div class="search-input rounded-0">
-                                        <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                        <input class="input rounded-0" type="text" placeholder="Buscar produtos">
-                                        <div class="search-input-close"><i class="feather icon-x"></i></div>
-                                    </div>
-                                </form>
-                            </li>
                         </ul>
                     </div>
                     <ul class="nav navbar-nav float-right">
-                        <li class="nav-item d-sm-inline d-none">
-                            <a class="btn btn-relief-dark waves-effect waves-light font-small-3 mr-1 px-2" style="margin-top: 0.7rem;" href="#"><span>Pedidos de compra</span></a>
-                        </li>
                         <li class="nav-item position-relative">
-                            <a class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;" href="#"><span>Cotação e lista</span></a>
-                            <span class="badge badge-pill badge-up" style="background: #d11b6d; top: 8px; right: -4px;">38</span>
+                            <a href="#" class="btn btn-relief-primary waves-effect font-small-3 waves-light px-2" style="margin-top: 0.7rem;">
+                                <span>Sair do painel<span class="d-sm-inline d-none"> de cotação</span></span>
+                            </a>
                         </li>
                         <li class="dropdown dropdown-user nav-item">
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
@@ -164,98 +150,157 @@
         </div>
     </div>
 
-    <div class="app-content content">
+    <div class="app-content content vh-100">
         <div class="header-navbar-shadow"></div>
-        <div class="content-wrapper">
-            <div class="content-header row">
-                <div class="content-header-left col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title mb-0">Fale conosco</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="content-wrapper p-0" style="margin-top: 4.50rem;">
             <div class="content-body">
-                <section class="card">
-                    <div class="card-content">
-                        <div class="card-body">
-                            <div class="col-md-6 col-12">
-                                <div class="card-body">
-                                    <form class="form form-horizontal">
-                                        <div class="form-body">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Seu nome</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="text" id="" class="form-control" name="" placeholder="Nome do resposável pela compra">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Sua empresa</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="text" id="" class="form-control" name="" placeholder="Sua empresa">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Seu email</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="email" id="" class="form-control" name="" placeholder="Seu email">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Seu WhatsApp</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <input type="number" id="" class="form-control" name="" placeholder="Seu WhatsApp">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group row">
-                                                        <div class="col-md-4">
-                                                            <span>Mensagem</span>
-                                                        </div>
-                                                        <div class="col-md-8">
-                                                            <textarea class="form-control" id="" rows="4" placeholder="Mensagem"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                <div class="row mx-md-0">
+                    <div class="col-md-3 p-0" style="border-right: solid 1px #D5D5D5;">
+                        <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <h6 class="m-0">Pedido de compra</h6>
+                        </div>
+                        <div class="py-1 px-2 font-small-3">
+                            <div class="mb-1">
+                                <span class="mr-25">Filtros</span>
+                                <div class="chip ml-25 mt-25 border border-light bg-white">
+                                    <div class="chip-body">
+                                        <span class="chip-text text-primary">21/04/2020</span>
+                                        <div class="chip-closeable ml-0"><i class="feather icon-x text-primary font-weight-bold"></i></div>
+                                    </div>
+                                </div>
+                                <div class="chip ml-25 mt-25 border border-light bg-white">
+                                    <div class="chip-body">
+                                        <span class="chip-text text-primary">Fornecedor YZ</span>
+                                        <div class="chip-closeable ml-0"><i class="feather icon-x text-primary font-weight-bold"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative" >
+                                <a href="#">Últimos 14 dias</a>
+                                <div class="pickadate mr-2 ml-25 d-inline"><a href="#"><i class="feather icon-calendar font-medium-1"></i></a></div>
+                                <a href="#" data-toggle="modal" data-target="#filtro-fornecedor">Fornecedor <i class="feather icon-chevron-down font-medium-1 position-relative" style="top: 2px;"></i></a>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 15.70rem;">
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor A</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-file-text font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor B</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-file-text font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor C</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-file-text font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor D</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-file-text font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor E</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-file-text font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#x" class="d-block text-dark">
+                                    <span class="float-right text-body font-small-1 text-right">
+                                        21/04/2020
+                                    </span>
+                                    <strong>Fornecedor F</strong>
+                                    <span class="d-block mt-25 text-primary"><i class="feather icon-file-text font-small-2"></i> Pedido emitido</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 p-0" style="background: #E5DDD5;">
+                        <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <div class="float-right font-small-3">
+                                <div class="dropdown d-inline">
+                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="font-small-3"><i class="feather icon-headphones"></i><span class="d-md-inline d-none ml-25">Contato</span></a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="fa fa-whatsapp mr-25"></i> WhatsApp</a>
+                                        <a class="dropdown-item" href="#"><i class="feather icon-phone mr-25"></i> Telefone</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown d-inline ml-2">
+                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="font-small-3"><i class="feather icon-info"></i><span class="d-md-inline d-none ml-25">Informações</span></a>
+                                    <div class="dropdown-menu dropdown-menu-right" style="min-width: 240px">
+                                        <p class="p-1 m-0 font-small-3">
+                                            Restaurante dos Sabores Ltda<br>
+                                            00.000.000/0001-01<br><br>
+                                            Rua das Palmeiras, 100 - Sala 10<br>
+                                            Centro - São Paulo / SP<br>
+                                            01010-010
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#x" title="Voltar" class="d-md-none"><i class="feather icon-arrow-left mr-1 mt-n25 float-left font-large-1"></i></a>
+                            <h6 class="m-0 font-weight-bold">Matheus Folhagem</h6>
+                        </div>
 
-                                                <div class="col-md-8 offset-md-4">
-                                                    <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect waves-light">Enviar</button>
-                                                </div>
-                                            </div>
+                        <div class="vh-100 overflow-auto" style="padding-bottom: 10rem;">
+                            <div class="card shadow-sm m-1">
+                                <div class="card-header d-block">
+                                    <div class="avatar bg-rgba-warning p-50 m-0 mr-3 mb-50 float-left" style="cursor: default;">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-check text-warning font-medium-5"></i>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="ml-2">
+                                        <span class="float-right font-small-3">21/04/2020 - 22:10</span>
+                                        <h4 class="card-title color-mf-laranja">Pedido de compra emitido!</h4>
+                                        <p class="my-25">O fornecedor já foi informado, por email, sobre seu pedido.</p>
+                                        <p class="my-25"><a href="" class="btn btn-primary waves-effect waves-light">Ver o pedido emitido</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <h5 class="mt-1">E agora?</h5>
+                                    <p class="font-small-3 mb-0">Agora é só aguardar o contato do fornecedor.</p>
+                                    <h5 class="mt-3">Dica: compartilhe!</h5>
+                                    <p class="font-small-3 mb-0">Que tal compartilhar este pedido de compra com o responsável pelo seu estoque?</p>
+                                    <p class="font-small-3 mb-0 disabled-opacity">Assim, quando chegar os produtos, a pessoa pode conferir se todos os detalhes e preços estão de acordo.</p>
+                                    <p class="mb-0 mt-1">
+                                        <a href="#" class="btn btn-outline-success px-1 waves-effect waves-light mr-1"><i class="fa fa-whatsapp mr-50"></i> Pelo WhatsApp</a>
+                                        <a href="#" class="btn btn-flat-primary px-1 waves-effect waves-light"><i class="feather icon-link mr-50"></i> Copiar link</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="drag-target"></div>
-
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
-    </footer>
 
     <!-- Modal - Dados do negócio -->
     <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
@@ -426,9 +471,99 @@
         </div>
     </div>
 
+    <!-- Modal - Filtro por Fornecedor -->
+    <div class="modal fade text-left" id="filtro-fornecedor" tabindex="-1" role="dialog" aria-labelledby="myModalFiltroFornecedor" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalFiltroFornecedor">Filtrar por fornecedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <div class="vs-radio-con vs-radio-primary">
+                                <input type="radio" name="fornecedor-filtro" value="">
+                                <span class="vs-radio">
+                                  <span class="vs-radio--border"></span>
+                                  <span class="vs-radio--circle"></span>
+                                </span>
+                                <span>Fornecedor A</span>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <div class="vs-radio-con vs-radio-primary">
+                                <input type="radio" name="fornecedor-filtro" value="">
+                                <span class="vs-radio">
+                                  <span class="vs-radio--border"></span>
+                                  <span class="vs-radio--circle"></span>
+                                </span>
+                                <span>Fornecedor B</span>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <div class="vs-radio-con vs-radio-primary">
+                                <input type="radio" name="fornecedor-filtro" value="">
+                                <span class="vs-radio">
+                                  <span class="vs-radio--border"></span>
+                                  <span class="vs-radio--circle"></span>
+                                </span>
+                                <span>Fornecedor C</span>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <div class="vs-radio-con vs-radio-primary">
+                                <input type="radio" name="fornecedor-filtro" value="">
+                                <span class="vs-radio">
+                                  <span class="vs-radio--border"></span>
+                                  <span class="vs-radio--circle"></span>
+                                </span>
+                                <span>Fornecedor D</span>
+                            </div>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <div class="vs-radio-con vs-radio-primary">
+                                <input type="radio" name="fornecedor-filtro" value="">
+                                <span class="vs-radio">
+                                  <span class="vs-radio--border"></span>
+                                  <span class="vs-radio--circle"></span>
+                                </span>
+                                <span>Fornecedor N</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../assets/vendors/js/vendors.min.js"></script>
     <script src="../assets/js/app-menu.min.js"></script>
     <script src="../assets/js/app.min.js"></script>
+
+    <script src="../assets/vendors/js/pickadate/picker.js"></script>
+    <script src="../assets/vendors/js/pickadate/picker.date.js"></script>
+
+    <script>
+      $('.chip-closeable').on('click', function () {
+        $(this).closest('.chip').remove();
+      });
+
+      $( '.pickadate' ).pickadate({
+        formatSubmit: 'dd/mm/yyyy',
+        monthsFull: [ 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro' ],
+        monthsShort: [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez' ],
+        weekdaysShort: [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb' ],
+        today: 'Hoje',
+        clear: '',
+        close: 'Fechar'
+      });
+    </script>
 
 </body>
 </html>

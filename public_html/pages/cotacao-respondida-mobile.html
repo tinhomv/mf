@@ -112,7 +112,10 @@
         <div class="content-wrapper p-0" style="margin-top: 4.50rem;">
             <div class="content-body">
                 <div class="row mx-md-0">
-                    <div class="col-md-3 p-0" style="border-right: solid 1px #D5D5D5;">
+                    <!-- 
+                        tip: quando o breakpoint for menor ou igual a 768px adiciona a class 'd-none' na div abaixo ao clicar em algum item da lista. E ao clicar no botão de voltar remove a class 'd-none'
+                     -->
+                    <div class="col-md-3 p-0 d-none" style="border-right: solid 1px #D5D5D5;">
                         <div class="p-1" style="background: #EDEDED;">
                             <ul class="nav nav-tabs nav-fill m-0" role="tablist">
                                 <li class="nav-item">
@@ -442,13 +445,13 @@
 
                         <div class="vh-100 overflow-auto" style="padding-bottom: 10rem;">
                             <div class="card shadow-sm m-1">
-                                <div class="card-header justify-content-start">
-                                    <div class="avatar bg-rgba-warning p-50 m-0 mr-2 mb-50 float-left" style="cursor: default;">
-                                        <div class="avatar-content">
-                                            <i class="feather icon-check text-warning font-medium-5"></i>
-                                        </div>
-                                    </div>
-                                    <div class="ml-2">
+                                <div class="card-header">
+                                    <div class="w-100">
+                                        <div class="avatar bg-rgba-warning p-50 m-0 mr-2 mb-50 float-left" style="cursor: default;">
+                                                <div class="avatar-content">
+                                                <i class="feather icon-check text-warning font-medium-5"></i>
+                                            </div>
+                                        </div>  
                                         <h4 class="card-title color-mf-laranja">Cotação respondida!</h4>
                                         <p class="my-25">O cliente já foi informado, por e-mail, sobre sua resposta.</p>
                                     </div>
