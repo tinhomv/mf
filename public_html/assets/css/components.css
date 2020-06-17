@@ -3289,7 +3289,7 @@ body.dark-layout .hide-scroll-top-switch .custom-switch .custom-control-label:be
 
 @media screen and (min-width: 1200px) {
   head {
-    font-family : 'xl 1200px';
+    /*font-family : 'xl 1200px';*/
   }
   body:after {
     content : 'xl - min-width: 1200px';

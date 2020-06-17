@@ -26,8 +26,6 @@
 
 <body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
-    <div class="header-navbar-shadow"></div>
-
     <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-verde">
         <div class="navbar-wrapper">
             <div class="navbar-container content">
@@ -155,30 +153,14 @@
         <div class="content-wrapper p-0" style="margin-top: 4.50rem;">
             <div class="content-body">
                 <div class="row mx-md-0">
-                    <div class="col-md-3 p-0 d-none" style="border-right: solid 1px #D5D5D5;">
+                    <div class="col-md-2 p-0 d-none" style="border-right: solid 1px #D5D5D5;">
                         <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
                             <h6 class="m-0">Pedido de compra</h6>
                         </div>
-                        <div class="py-1 px-2 font-small-3">
-                            <div class="mb-1">
-                                <span class="mr-25">Filtros</span>
-                                <div class="chip ml-25 mt-25 border border-light bg-white">
-                                    <div class="chip-body">
-                                        <span class="chip-text text-primary">21/04/2020</span>
-                                        <div class="chip-closeable ml-0"><i class="feather icon-x text-primary font-weight-bold"></i></div>
-                                    </div>
-                                </div>
-                                <div class="chip ml-25 mt-25 border border-light bg-white">
-                                    <div class="chip-body">
-                                        <span class="chip-text text-primary">Fornecedor YZ</span>
-                                        <div class="chip-closeable ml-0"><i class="feather icon-x text-primary font-weight-bold"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="position-relative" >
-                                <a href="#">Últimos 14 dias</a>
-                                <div class="pickadate mr-2 ml-25 d-inline"><a href="#"><i class="feather icon-calendar font-medium-1"></i></a></div>
-                                <a href="#" data-toggle="modal" data-target="#filtro-fornecedor">Fornecedor <i class="feather icon-chevron-down font-medium-1 position-relative" style="top: 2px;"></i></a>
+                        <div class="p-50 font-small-3">
+                            <div class="position-relative">
+                                <div class="pickadate d-inline-block my-25 ml-75 mr-25"><a href="#">Últ. 14 dias <i class="feather icon-calendar"></i></a></div>
+                                <a href="#" data-toggle="modal" data-target="#filtro-fornecedor" class="d-inline-block my-25 ml-75">Fornecedor <i class="feather icon-chevron-down position-relative" style="top: 2px;"></i></a>
                             </div>
                         </div>
                         <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 15.70rem;">
@@ -238,7 +220,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-9 p-0" style="background: #E5DDD5;">
+                    <div class="col-md-10 p-0" style="background: #E5DDD5;">
                         <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
                             <div class="float-right font-small-3">
                                 <div class="dropdown d-inline">
@@ -300,6 +282,7 @@
         </div>
     </div>
 
+    <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
     <!-- Modal - Dados do negócio -->

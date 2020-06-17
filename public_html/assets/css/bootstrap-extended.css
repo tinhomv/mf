@@ -1675,7 +1675,7 @@ button, html [type='button'], [type='reset'], [type='submit'] {
   /* For sm screen*/
 }
 .header-navbar.fixed-top {
-  left : 260px;
+  /*left : 260px;*/
 }
 .header-navbar[class*='bg-'] .navbar-nav .nav-item > a {
   color : #FFFFFF !important;
