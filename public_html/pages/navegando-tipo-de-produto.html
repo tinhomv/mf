@@ -124,10 +124,9 @@
                     <i class="font-small-2 ml-1">Produtos favoritados para sua cotação</i>
                 </li>
                 <div class="divider"><hr class="m-0"></div>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações abertas</span></a></li>
-                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
-                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações realizadas</span></a></li>
                 <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
                 <div class="nav-item mt-1 px-1">
                     <a href="#" data-toggle="modal" data-target="#navegando-como" class="p-1 rounded text-body d-block" style="background: #eee;">
                         <span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span>
@@ -192,253 +191,39 @@
                                             <a href="#" data-toggle="modal" data-target="#filtro-volume" class="mr-2 text-dark"><i class="feather icon-chevron-down"></i> Volume</a>
                                             <a href="#" data-toggle="modal" data-target="#filtro-marca" class="mr-2 text-dark"><i class="feather icon-chevron-down"></i> Marca</a>
                                             <a href="#" data-toggle="modal" data-target="#filtro-mais" class="mr-2 text-dark"><i class="feather icon-sliders"></i> Mais filtros</a>
-
-                                            <!-- Modal - Filtro 1 -->
-                                            <div class="modal fade text-left" id="filtro-volume" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro1" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h4 class="modal-title" id="myModalFiltro1">Filtrar por volume</h4>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 1</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 2</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 3</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção N</span>
-                                                                    </span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Modal - Filtro 2 -->
-                                            <div class="modal fade text-left" id="filtro-marca" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro2" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h4 class="modal-title" id="myModalFiltro2">Filtrar por marca</h4>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <a href="#x" class="chip my-50 mr-25" title="">
-                                                                <div class="chip-body">
-                                                                    <span class="chip-text">Marca A</span>
-                                                                </div>
-                                                            </a>
-                                                            <a href="#x" class="chip chip-success my-50 mr-25" title="">
-                                                                <div class="chip-body">
-                                                                    <span class="chip-text">Marca com nome grande</span>
-                                                                </div>
-                                                            </a>
-                                                            <a href="#x" class="chip chip-success my-50 mr-25" title="">
-                                                                <div class="chip-body">
-                                                                    <span class="chip-text">ABC</span>
-                                                                </div>
-                                                            </a>
-                                                            <a href="#x" class="chip my-50 mr-25" title="">
-                                                                <div class="chip-body">
-                                                                    <span class="chip-text">Marca Z</span>
-                                                                </div>
-                                                            </a>
-                                                            <a href="#x" class="chip my-50 mr-25" title="">
-                                                                <div class="chip-body">
-                                                                    <span class="chip-text">Marca ABCDE</span>
-                                                                </div>
-                                                            </a>
-                                                            <a href="#x" class="chip my-50 mr-25" title="">
-                                                                <div class="chip-body">
-                                                                    <span class="chip-text">Marca N</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Modal - Filtro 3 -->
-                                            <div class="modal fade text-left" id="filtro-mais" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro3" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h4 class="modal-title" id="myModalFiltro3">Mais filtros</h4>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li class="d-flex"><h6 class="mb-1">Opções A</h6></li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 1</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 2</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção N</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li><hr></li>
-                                                                <li class="d-flex"><h6 class="mb-1">Opções B</h6></li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 1</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção 2</span>
-                                                                    </span>
-                                                                </li>
-                                                                <li class="d-flex justify-content-between align-items-center py-25">
-                                                                    <span class="vs-checkbox-con vs-checkbox-primary">
-                                                                        <input type="checkbox" value="false">
-                                                                        <span class="vs-checkbox">
-                                                                            <span class="vs-checkbox--check">
-                                                                                <i class="vs-icon feather icon-check"></i>
-                                                                            </span>
-                                                                        </span>
-                                                                        <span class="">Opção N</span>
-                                                                    </span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
 
                                         <div class="swiper-options swiper-container">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide w-auto">
-                                                    <a href="#x" class="chip mt-1 mr-1" title="">
+                                                    <a href="#x" class="chip mt-1 mr-75" title="">
                                                         <div class="chip-body">
-                                                            <span class="chip-text">Opção 1 / 300g</span>
+                                                            <span class="chip-text font-weight-bold">Opção 1 / 300g</span>
                                                         </div>
                                                     </a>
-                                                </div>
-                                                <div class="swiper-slide w-auto">
-                                                    <a href="#x" class="chip chip-success mt-1 mr-1" title="">
+                                                    <a href="#x" class="chip chip-success mt-1 mr-75" title="">
                                                         <div class="chip-body">
-                                                            <span class="chip-text">Opção 2 / 300g</span>
+                                                            <span class="chip-text font-weight-bold">Opção 2 / 300g</span>
                                                         </div>
                                                     </a>
-                                                </div>
-                                                <div class="swiper-slide w-auto">
-                                                    <a href="#x" class="chip mt-1 mr-1" title="">
+                                                    <a href="#x" class="chip mt-1 mr-75" title="">
                                                         <div class="chip-body">
-                                                            <span class="chip-text">Opção 3 / 300g</span>
+                                                            <span class="chip-text font-weight-bold">Opção 3 / 300g</span>
                                                         </div>
                                                     </a>
-                                                </div>
-                                                <div class="swiper-slide w-auto">
-                                                    <a href="#x" class="chip mt-1 mr-1" title="">
+                                                    <a href="#x" class="chip mt-1 mr-75" title="">
                                                         <div class="chip-body">
-                                                            <span class="chip-text">Opção 4 / 300g</span>
+                                                            <span class="chip-text font-weight-bold">Opção 4 / 300g</span>
                                                         </div>
                                                     </a>
-                                                </div>
-                                                <div class="swiper-slide w-auto">
-                                                    <a href="#x" class="chip mt-1 mr-1" title="">
+                                                    <a href="#x" class="chip mt-1 mr-75" title="">
                                                         <div class="chip-body">
-                                                            <span class="chip-text">Opção 5 / 300g</span>
+                                                            <span class="chip-text font-weight-bold">Opção 5 / 300g</span>
                                                         </div>
                                                     </a>
-                                                </div>
-                                                <div class="swiper-slide w-auto">
-                                                    <a href="#x" class="chip mt-1 mr-1" title="">
+                                                    <a href="#x" class="chip mt-1 mr-75" title="">
                                                         <div class="chip-body">
-                                                            <span class="chip-text">Opção 6 / 300g</span>
+                                                            <span class="chip-text font-weight-bold">Opção 6 / 300g</span>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -1035,6 +820,211 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal - Filtro 1 -->
+    <div class="modal fade text-left" id="filtro-volume" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalFiltro1">Filtrar por volume</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 1</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 2</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 3</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção N</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Filtro 2 -->
+    <div class="modal fade text-left" id="filtro-marca" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalFiltro2">Filtrar por marca</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="#x" class="chip my-50 mr-25" title="">
+                        <div class="chip-body">
+                            <span class="chip-text">Marca A</span>
+                        </div>
+                    </a>
+                    <a href="#x" class="chip chip-success my-50 mr-25" title="">
+                        <div class="chip-body">
+                            <span class="chip-text">Marca com nome grande</span>
+                        </div>
+                    </a>
+                    <a href="#x" class="chip chip-success my-50 mr-25" title="">
+                        <div class="chip-body">
+                            <span class="chip-text">ABC</span>
+                        </div>
+                    </a>
+                    <a href="#x" class="chip my-50 mr-25" title="">
+                        <div class="chip-body">
+                            <span class="chip-text">Marca Z</span>
+                        </div>
+                    </a>
+                    <a href="#x" class="chip my-50 mr-25" title="">
+                        <div class="chip-body">
+                            <span class="chip-text">Marca ABCDE</span>
+                        </div>
+                    </a>
+                    <a href="#x" class="chip my-50 mr-25" title="">
+                        <div class="chip-body">
+                            <span class="chip-text">Marca N</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Filtro 3 -->
+    <div class="modal fade text-left" id="filtro-mais" tabindex="-1" role="dialog" aria-labelledby="myModalFiltro3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalFiltro3">Mais filtros</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex"><h6 class="mb-1">Opções A</h6></li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 1</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 2</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção N</span>
+                            </span>
+                        </li>
+                        <li><hr></li>
+                        <li class="d-flex"><h6 class="mb-1">Opções B</h6></li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 1</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção 2</span>
+                            </span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center py-25">
+                            <span class="vs-checkbox-con vs-checkbox-primary">
+                                <input type="checkbox" value="false">
+                                <span class="vs-checkbox">
+                                    <span class="vs-checkbox--check">
+                                        <i class="vs-icon feather icon-check"></i>
+                                    </span>
+                                </span>
+                                <span class="">Opção N</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="../assets/vendors/js/vendors.min.js"></script>
     <script src="../assets/js/app-menu.min.js"></script>

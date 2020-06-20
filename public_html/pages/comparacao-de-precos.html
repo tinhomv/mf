@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html class="loading" lang="pt-BR" data-textdirection="ltr">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <title>Meu Fornecedor</title>
+    <link rel="apple-touch-icon" href="../assets/images/favicon-180x180.png">
+    <link rel="icon" href="../assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/extensions/ekko-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/swiper.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+ 
+</head>
+
+<body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-verde">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu mr-auto">
+                                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#" title="Menu principal"><i class="ficon feather icon-menu"></i></a>
+                            </li>
+                            <li class="nav-item d-sm-block d-none">
+                                <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none">
+                                    <span class="user-status">John Doe</span>
+                                </div>
+                                <span><img class="round" src="../assets/images/avatar-default.png" alt="avatar" height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item disabled bg-mf-verde text-white" href="#" tabindex="-1" aria-disabled="true">Vuexy Company</a>
+                                <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">John Doe</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="feather icon-refresh-ccw"></i> Trocar usuário</a>
+                                <a class="dropdown-item text-warning" href="#" ><i class="fa fa-exchange"></i> Modo fornecedor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dados-do-negocio"><i class="feather icon-info"></i> Dados do negócio</a>
+                                <a class="dropdown-item" href="conta-de-usuario.html"><i class="feather icon-user"></i> Conta de usuário</a>
+                                <a class="dropdown-item" href="#"><i class="feather icon-log-out"></i> Sair</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sobre-mf">Sobre o Meu Fornecedor</a>
+                                <a class="dropdown-item" href="contato.html">Contato</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#termos-mf">Termos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="#x">
+                        <div class="brand-logo"></div>
+                        <h2 class="brand-text mb-0">Meu Fornecedor</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="feather icon-x font-medium-4 primary toggle-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item text-white bg-primary text-center p-2 mb-1">
+                    <span class="d-block font-weight-bold font-medium-3">38 produtos</span>
+                    <span class="d-block font-small-3 mb-1">para cotar agora</span>
+                    <a href="#x" class="btn font-small-3 font-weight-bold bg-white text-primary width-100 m-auto">Avançar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#x">
+                        <span class="menu-title">Sua lista (412 produtos)</span>
+                    </a>
+                    <i class="font-small-2 ml-1">Produtos favoritados para sua cotação</i>
+                </li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações realizadas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <div class="nav-item mt-1 px-1">
+                    <a href="#" data-toggle="modal" data-target="#navegando-como" class="p-1 rounded text-body d-block" style="background: #eee;">
+                        <span class="menu-title">Navegando como...<br><span class="font-small-3">CNPJ / RJ &nbsp; <span class="text-primary">Alterar</span></span></span>
+                    </a>
+                </div>
+                <li class="navigation-header"><span>Navegue por categorias</span></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Alimentos e Bebidas</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Embalagens</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Limpeza</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Utensilios</span></a>
+                    <ul class="menu-content font-small-3">
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria A</span></a></li>
+                        <li><a href="#x"><span class="menu-item">Categoria N</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="app-content content">
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-body">
+                <div class="p-2" style="margin: -2.35rem -2.20rem 1.50rem -2.20rem; background: #EDEDED; border-bottom: solid 1px #D5D5D5;">
+                    <div class="px-75">
+                        <a href="#x" class="float-right btn btn-outline-primary bg-white waves-effect waves-light font-small-3 font-weight-bold px-1 ml-1 mt-n75">Comparar outro</a>
+                        <a href="#x" title="Voltar"><i class="feather icon-arrow-left mr-1 mt-n25 float-left font-large-1"></i></a>
+                        <h6 class="m-0 font-weight-bold">Tipo de produto</h6>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-body pb-1">
+                        <h6 class="mb-1">Opções</h6>
+                        <a href="#x" class="chip mr-50 px-0 mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Limão</span>
+                            </span>
+                        </a>
+                        <a href="#x" class="chip mr-50 px-0 chip-success mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Cebola</span>
+                            </span>
+                        </a>
+                        <a href="#x" class="chip mr-50 px-0 mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Alho</span>
+                            </span>
+                        </a>
+                        <a href="#x" class="chip mr-50 px-0 mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Tradicional</span>
+                            </span>
+                        </a>
+                        <a href="#x" class="chip mr-50 px-0 mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Diet</span>
+                            </span>
+                        </a>
+                        <a href="#x" class="chip mr-50 px-0 chip-success mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Normal</span>
+                            </span>
+                        </a>
+                        <a href="#x" class="chip mr-50 px-0 mf-chip-options" title="">
+                            <span class="chip-body px-75">
+                                <span class="chip-text font-weight-bold">Regular</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-options swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold" id="toastr-marcar">Marcar</a>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-success p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold text-white" id="toastr-desmarcar"><i class="feather icon-flag float-right mt-25"></i> Marcado</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-success p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold text-white"><i class="feather icon-flag float-right mt-25"></i> Marcado</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 190px;">
+                            <h6>Hellmann's</h6>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75">
+                                    <div class="mr-75 float-left position-relative" style="width: 32%">
+                                        <a href="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" data-toggle="lightbox" data-title="Maionese Tradicional">
+                                            <i class="feather icon-search position-absolute text-muted font-small-2" style="left: 3px; bottom: 3px;"></i>
+                                            <img class="rounded img-fluid" src="https://static.carrefour.com.br/medias/sys_master/images/images/h20/hdb/h00/h00/13740811419678.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <span class="text-dark font-small-3">Display | 90 g | 24 unid.</span>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+
+                            <p class="font-small-3 mb-25 mt-2"><a href="#" data-toggle="modal" data-target="#modalFornecedor">Fornecedor <i class="feather icon-info ml-25"></i></a></p>
+                            <div class="card shadow-sm border mb-1">
+                                <div class="card-body p-75 font-small-3">
+                                    <p>
+                                        <span class="d-block"><span class="font-weight-bold">R$ 9.999,99</span> p/ Display</span>
+                                        <span class="d-block disabled-opacity"><i>(R$ 999,99 p/ Kg)</i></span>
+                                    </p>
+                                    <div class="bg-rgba-light p-50 rounded border">
+                                        <span class="d-block mb-25">Cx. c/ 4</span>
+                                        <span class="font-weight-bold text-dark font-medium-1">R$ 9.999,99</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-white p-0">
+                                    <a href="#x" class="d-block p-75 font-weight-bold">Marcar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix blue-grey lighten-2 mb-0"><small class="float-md-left d-block d-md-inline-block mt-25">Meu Fornecedor é um projeto da Central de Negócios Serviços Digitais LTDA</small><small class="float-md-right d-none d-md-block">CNPJ 28.766.904/0001-41</small></p>
+    </footer>
+
+    <!-- Modal - Dados do negócio -->
+    <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Dados do negócio</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover-animation mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Nome fantasia:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Razão social:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CNPJ:</th>
+                                        <td>00.000.000/0001-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Endereço:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Bairro:</th>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Município/UF:</th>
+                                        <td>SP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-warning mt-2" role="alert">
+                            <i class="feather icon-alert-circle mr-1 align-middle float-left" style="font-size: 2rem;"></i>
+                            <span class="text-dark">Para alterar os dados acima, <a href="contato.html">clique aqui</a> e entre em contato conosco.</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Sobre o Meu Fornecedor -->
+    <div class="modal fade text-left" id="sobre-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Sobre o Meu Fornecedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Termos -->
+    <div class="modal fade text-left" id="termos-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Termos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Fornecedor -->
+    <div class="modal fade text-left" id="modalFornecedor" tabindex="-1" role="dialog" aria-labelledby="myModalFornecedor" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalFornecedor">Nome do fornecedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="card-title mb-1"><i class="feather icon-dollar-sign font-medium-2 mr-50"></i> Financeiro</h5>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <h6 class="mb-50 pt-1 disabled-opacity">Valor mínimo de pedido</h6>
+                            <p><strong class="font-medium-3">R$ 300,00</strong></p>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h6 class="mb-50 pt-1 disabled-opacity">Valor máximo de pedido</h6>
+                            <p><strong class="font-medium-3">R$ 2.500,00</strong></p>
+                        </div>
+                        <div class="col-12">
+                            <h6 class="mb-50 pt-1 disabled-opacity">Condição de pagamento oferecida</h6>
+                            <p class="font-small-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde culpa cupiditate labore deleniti modi reprehenderit, veritatis ab! Fugiat sit obcaecati consectetur natus amet dolorum molestias</p>
+                        </div>
+                    </div>
+                    <hr class="mt-50 mb-2">
+                    <h5 class="card-title mb-1"><i class="feather icon-truck font-medium-2 mr-50"></i> Condições de entrega</h5>
+                    <h6 class="mb-50 pt-1 disabled-opacity">Prazo de entrega</h6>
+                    <p class="font-small-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde culpa cupiditate labore deleniti modi reprehenderit</p>
+                    <h6 class="mb-50 pt-1 disabled-opacity">Rota</h6>
+                    <p class="font-small-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde culpa cupiditate labore deleniti modi reprehenderit</p>
+                    <h6 class="mb-50 pt-1 disabled-opacity">Custo de frete</h6>
+                    <p class="font-small-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde culpa cupiditate labore deleniti modi reprehenderit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/vendors/js/vendors.min.js"></script>
+    <script src="../assets/js/app-menu.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+
+    <script src="../assets/vendors/js/toastr.min.js"></script>
+    <script src="../assets/js/extensions/ekko-lightbox.min.js"></script>
+    <script src="../assets/vendors/js/swiper.min.js"></script>
+
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
+      $('#toastr-marcar').on('click', function () {
+        toastr.success('Você verá destacado na proposta do fornecedor', 'Produto marcado', { positionClass: 'toast-bottom-right', containerId: 'toast-bottom-right', progressBar: true });
+      });
+
+      $('#toastr-desmarcar').on('click', function () {
+        toastr.info('Você removeu o destaque', 'Produto desmarcado', { positionClass: 'toast-bottom-right', containerId: 'toast-bottom-right', progressBar: true });
+      });
+
+      $(document).ready(function () {
+        var mySwiper1 = new Swiper('.swiper-options', {
+          slidesPerView: 'auto',
+          spaceBetween: 15,
+        });
+      });
+
+      $(".mf-chip-options .chip-body").on("click", function(e) {
+        $(this).parent('.mf-chip-options').toggleClass("chip-success");
+        e.stopPropagation();
+      });
+    </script>
+
+</body>
+</html>

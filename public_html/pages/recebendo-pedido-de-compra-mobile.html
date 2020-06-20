@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="loading" lang="pt-BR" data-textdirection="ltr">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <title>Meu Fornecedor</title>
+    <link rel="apple-touch-icon" href="../assets/images/favicon-180x180.png">
+    <link rel="icon" href="../assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vertical-menu.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+ 
+</head>
+
+<body class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark navbar-shadow bg-primary bg-mf-laranja">
+        <div class="navbar-wrapper">
+            <div class="navbar-container content">
+                <div class="navbar-collapse" id="navbar-mobile">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item mobile-menu mr-auto">
+                                <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#" title="Menu principal"><i class="ficon feather icon-menu"></i></a>
+                            </li>
+                            <li class="nav-item d-sm-block d-none">
+                                <a href="#" title="Meu Fornecedor"><div class="brand-logo-mf"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                                <div class="user-nav d-sm-flex d-none">
+                                    <span class="user-status">John Doe</span>
+                                </div>
+                                <span><img class="round" src="../assets/images/avatar-default.png" alt="avatar" height="40" width="40"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item disabled bg-mf-laranja text-white" href="#" tabindex="-1" aria-disabled="true">Vuexy Company</a>
+                                <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">John Doe</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="feather icon-refresh-ccw"></i> Trocar usuário</a>
+                                <a class="dropdown-item color-mf-verde" href="#" ><i class="fa fa-exchange"></i> Modo comprador</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dados-do-negocio"><i class="feather icon-info"></i> Dados do negócio</a>
+                                <a class="dropdown-item" href="conta-de-usuario2.html"><i class="feather icon-user"></i> Conta de usuário</a>
+                                <a class="dropdown-item" href="#"><i class="feather icon-log-out"></i> Sair</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#sobre-mf">Sobre o Meu Fornecedor</a>
+                                <a class="dropdown-item" href="contato.html">Contato</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#termos-mf">Termos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="#x">
+                        <div class="brand-logo"></div>
+                        <h2 class="brand-text mb-0">Meu Fornecedor</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="feather icon-x font-medium-4 primary toggle-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações em andamento</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Cotações encerradas</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Pedidos de compra</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Seu catálogo de produtos</span></a></li>
+                <div class="divider"><hr class="m-0"></div>
+                <li class="navigation-header"><span>Atendimento ao seu cliente</span></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Valor mínimo de pedido</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Área de entrega/atendimento</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Prazo e/ou rota de entrega</span></a></li>
+                <li class="nav-item"><a href="#x"><span class="menu-title">Condições de pagamento</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="app-content content vh-100">
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper p-0" style="margin-top: 4.50rem;">
+            <div class="content-body">
+                <div class="row mx-md-0">
+                    <div class="col-md-3 p-0 d-none" style="border-right: solid 1px #D5D5D5;">
+                        <div class="p-1" style="background: #EDEDED;">
+                            <ul class="nav nav-tabs nav-fill m-0" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link pt-25 active" id="home-tab" data-toggle="tab" href="#home" aria-controls="home" role="tab" aria-selected="true">Tudo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pt-25" id="profile-tab" data-toggle="tab" href="#profile" aria-controls="profile" role="tab" aria-selected="false">Cotações</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pt-25" id="about-tab" data-toggle="tab" href="#about" aria-controls="about" role="tab" aria-selected="false">Pedidos</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home" aria-labelledby="home-tab" role="tabpanel">
+                                <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 8.80rem;">
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right font-small-1">
+                                                21/04/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block text-primary mt-25">Cotação respondida</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                21/04/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 8h 11m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-light">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                21/04/2020
+                                            </span>
+                                            <strong>Restaurante dos Sabores</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                21/04/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Cotação recusada por você</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                21/04/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane" id="profile" aria-labelledby="profile-tab" role="tabpanel">
+                                <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 8.80rem;">
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block text-primary mt-25">Cotação respondida</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 8h 11m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Cotação recusada por você</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                30/05/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Cliente XYZ</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                30/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane" id="about" aria-labelledby="about-tab" role="tabpanel">
+                                <ul class="list-group list-group-flush font-small-3 shadow-sm vh-100 overflow-auto" style="padding-bottom: 8.80rem;">
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right font-small-1">
+                                                12/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block text-primary mt-25">Cotação respondida</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 8h 11m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                12/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Cotação recusada por você</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark disabled-opacity">
+                                            <span class="float-right font-small-1">
+                                                12/05/2020
+                                            </span>
+                                            <strong>Nome do cliente</strong>
+                                            <span class="font-small-2 d-block mt-25">Pedido de compra</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Cliente XYZ</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Cliente XYZ</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Cliente XYZ</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Cliente XYZ</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#x" class="d-block text-dark">
+                                            <span class="float-right text-body font-small-1">
+                                                12/05/2020
+                                                <span class="d-block badge badge-success font-small-2 mt-25">Novo</span>
+                                            </span>
+                                            <strong>Cliente XYZ</strong>
+                                            <span class="font-small-2 d-block mt-25">Não respondida. Expira em 2h 10m</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 p-0" style="background: #E5DDD5;">
+                        <div class="p-2" style="background: #EDEDED; border-bottom: solid 1px #D5D5D5">
+                            <span class="float-right font-weight-bold font-small-3 d-sm-inline d-none">21/04/2020 - 22:10</span>
+                            <a href="#x" title="Voltar" class="d-md-none"><i class="feather icon-arrow-left mr-1 mt-n25 float-left font-large-1"></i></a>
+                            <h6 class="m-0 font-weight-bold">Restaurante dos Sabores Restaurante dos Sabores Restaurante dos Sabores</h6>
+                        </div>
+
+                        <div class="vh-100 overflow-auto" style="padding-bottom: 10rem;">
+                            <div class="card shadow-sm m-1">
+                                <div class="card-body justify-content-start">
+                                    <div class="avatar bg-rgba-success p-50 m-0 mr-2 mb-50 float-left" style="cursor: default;">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-check text-success font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-2">
+                                        <h4 class="card-title color-mf-verde">Pedido de compra recebido!</h4>
+                                        <p class="my-25">
+                                            Este cliente já está aguardando por seu atendimento.<br>
+                                            <a href="#" class="btn btn-primary px-1 text-bold-600 waves-effect waves-light mt-75">Ver os produtos</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm m-1">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4 col-6">
+                                            <p class="font-weight-bold text-uppercase font-small-2">Dados</p>
+                                            <p class="mb-0 font-small-3">
+                                                <span class="d-block">Restaurante dos Sabores Ltda</span>
+                                                <span class="d-block">00.000.000/0001-01</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-6">
+                                            <p class="font-weight-bold text-uppercase font-small-2">Endereço</p>
+                                            <p class="mb-0 font-small-3">
+                                                Rua das Palmeiras, 1000 - Sala 10<br>
+                                                Centro - São Paulo / SP<br>
+                                                01010-010
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p class="font-weight-bold text-uppercase font-small-2">Contato</p>
+                                            <p class="mb-0 font-small-3">
+                                                <span class="d-block"><a href="#" class="text-body"><i class="fa fa-phone mr-50 text-primary"></i> (85) 9 8888-9999</a></span>
+                                                <span class="d-block"><a href="#" class="text-body"><i class="fa fa-whatsapp mr-50 text-primary"></i> (85) 9 2222-0000</a></span>
+                                                <span class="d-block"><a href="#" class="text-body"><i class="fa fa-envelope-o mr-50 text-primary"></i> contato@restaurantedossabores.com.br</a></span>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr class="my-2">
+                                        </div>
+
+                                        <div class="col-4">
+                                            <p class="font-weight-bold text-uppercase font-small-2">Valor total</p>
+                                            <p class="mb-0 font-medium-2">
+                                                <span class="d-block font-weight-bold">R$ 300,00</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="font-weight-bold text-uppercase font-small-2">Condições de pagamento</p>
+                                            <p class="mb-0 font-small-3">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur, aspernatur odit blanditiis in recusandae, excepturi atque facere dolores quod
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm border-light m-1">
+                                <div class="card-body p-1">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="btn-group dropup">
+                                                <button type="button" class="btn btn-outline-primary px-1 text-bold-600 waves-effect waves-light rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="feather icon-share-2"></i><span class="ml-50 d-sm-inline d-none"> Compartilhar</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <h6 class="dropdown-header">Compartilhar pelo:</h6>
+                                                    <a class="dropdown-item" href="#"><i class="fa fa-whatsapp font-medium-2 mr-50"></i> WhatsApp</a>
+                                                    <a class="dropdown-item" href="#"><i class="feather icon-link font-medium-2 mr-50"></i> Link da página</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 text-right">
+                                            <button type="button" class="btn btn-primary px-1 text-bold-600 waves-effect waves-light">Marcar como lida</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- Modal - Dados do negócio -->
+    <div class="modal fade text-left" id="dados-do-negocio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Dados do negócio</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover-animation mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Nome fantasia:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Razão social:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CNPJ:</th>
+                                        <td>00.000.000/0001-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Endereço:</th>
+                                        <td>Lorem ipsum dolor sit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Bairro:</th>
+                                        <td>Lorem ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Município/UF:</th>
+                                        <td>SP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-warning mt-2" role="alert">
+                            <i class="feather icon-alert-circle mr-1 align-middle float-left" style="font-size: 2rem;"></i>
+                            <span class="text-dark">Para alterar os dados acima, <a href="contato.html">clique aqui</a> e entre em contato conosco.</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Sobre o Meu Fornecedor -->
+    <div class="modal fade text-left" id="sobre-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">Sobre o Meu Fornecedor</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Termos -->
+    <div class="modal fade text-left" id="termos-mf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">Termos</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quas repellendus possimus minima labore dolore quae rem facilis aliquid delectus harum mollitia unde porro reprehenderit, vel cupiditate quidem voluptatibus quis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/vendors/js/vendors.min.js"></script>
+    <script src="../assets/js/app-menu.min.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+
+</body>
+</html>
